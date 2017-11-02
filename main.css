@@ -77,6 +77,10 @@ img.icon {
 	vertical-align: middle;
 }
 
+img.a3 {
+	width: 80%;
+}
+
 div div div.ticTacToeRow {
 	float: left;
 	clear: right;
@@ -86,8 +90,4 @@ footer.foot {
 	position:fixed;
 	bottom:5px;
 	right:5px;
-}
-
-object.a3 {
-	width: 80%;
 }
