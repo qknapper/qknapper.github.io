@@ -1,4 +1,4 @@
-updateHeight() 
+function updateHeight() 
 {
     var div = $('A3');
     var width = div.width();
