@@ -79,7 +79,7 @@ img.icon {
 
 img.a3 {
 	width: 80%;
-	border: 1;
+	border: 1 px solid;
 }
 
 div div div.ticTacToeRow {
