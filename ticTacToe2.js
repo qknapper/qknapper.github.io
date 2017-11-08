@@ -34,6 +34,7 @@ function fillSpace(num)
 		{
 			
 			//	AI - Algorithm
+			//				Less optimal moves come first and are overwritten if a more optimal move is found
 		
 					//	Board
 						//			Col1	Col2	Col3
@@ -44,6 +45,13 @@ function fillSpace(num)
 				
 			var ai;
 			var aiCurrent, aiSquare;
+			var board = 
+			[
+				[parseInt(s11.innerHTML), parseInt(s12.innerHTML), parseInt(s13.innerHTML)],
+				[parseInt(s21.innerHTML), parseInt(s22.innerHTML), parseInt(s23.innerHTML)],
+				[parseInt(s31.innerHTML), parseInt(s32.innerHTML), parseInt(s33.innerHTML)]
+			];		
+		
 	
 			//	i) Random Space
 			while(sentinel)
@@ -53,25 +61,21 @@ function fillSpace(num)
 				if(aiCurrent.innerHTML == 0)
 					sentinel = false;
 			}
+			
+			//	ii) Play in middle
+			if(board[1][1] == 0)
+				ai = "22";
+			
+			//	iii) Checks for a winning move for either team.
 		
-			//	ii) Checks for a winning move for either team.
-			//			Because it checks for team = 1 (user) first, a winning move for the ai
-			//			will overwrite a move to prevent the user from winning.
-		
-			var board = 
-			[
-				[parseInt(s11.innerHTML), parseInt(s12.innerHTML), parseInt(s13.innerHTML)],
-				[parseInt(s21.innerHTML), parseInt(s22.innerHTML), parseInt(s23.innerHTML)],
-				[parseInt(s31.innerHTML), parseInt(s32.innerHTML), parseInt(s33.innerHTML)]
-			];		
-		
+			
 			var team;
 			var rowCount, colCount;
 			var d1Count = 0;
 			var d2Count = 0;
 			var i, j;
 	
-			for(team = 1; team <3; team++)
+			for(team = 1; team < 3; team++)
 			{
 				for(i = 0; i < 2*board.length; i++)
 				{
@@ -84,19 +88,19 @@ function fillSpace(num)
 							colCount++;
 						if(i < 3 && board[j][i] == team)
 							rowCount++;
-						if(i < 3 && j < 3 && i == j && board[i][j] == 2)
+						if(i == j && i < 3 && j < 3 && board[i][j] == 2)
 							d1count++;
-						if(i < 3 && j < 3 && (2-i) == j && board[i][j] == 2)
+						if((2-i) == j && i < 3 && j < 3 && board[i][j] == 2)
 							d2count++;
 				
 						if(colCount > 1 && board[i%3][j%3] == 0)
-							ai = String(i%3) + String(j%3);
+							ai = String((i%3)+1) + String((j%3)+1);
 						if(rowCount > 1 && board[j%3][i%3] == 0)
-							ai = String(j%3) + String(i%3);
-						if(d1Count > 1 && board[j%3][i%3] == 0)
-							ai = String(j%3) + String(i%3);
-						if(d2Count > 1 && board[j%3][i%3] == 0)
-							ai = String(j%3) + String(i%3);
+							ai = String((j%3)+1) + String((i%3)+1);
+						if(i == j && d1Count > 1 && board[j%3][i%3] == 0)
+							ai = String((i%3)+1) + String((j%3)+1);
+						if((2-i) == j && d2Count > 1 && board[j%3][i%3] == 0)
+							ai = String((i%3)+1) + String((j%3)+1);
 					}
 				}
 			}
