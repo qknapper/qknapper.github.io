@@ -21,10 +21,8 @@ function fillSpace(num)
 	if(checkWin())
 	{
 		response.innerHTML = "You win! Congratulations!!! &ensp; Refresh to play again!";
-		sentinel = false;
 	}
-	
-	if(sentinel)
+	else
 	{
 		//	Cats Game
 		var catsGame = parseInt(s11.innerHTML) + parseInt(s12.innerHTML) + parseInt(s13.innerHTML)
