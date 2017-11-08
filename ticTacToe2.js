@@ -74,6 +74,9 @@ function fillSpace(num)
 	
 			for(team = 1; team < 3; team++)
 			{
+				d1Count = 0;
+				d2Count = 0;
+				
 				for(i = 0; i < board.length; i++)
 				{
 					colCount = 0;
@@ -82,9 +85,9 @@ function fillSpace(num)
 					for(j = 0; j < board[i].length; j++)
 					{
 						if(board[i][j] == team)
-							colCount++;
-						if(board[j][i] == team)
 							rowCount++;
+						if(board[j][i] == team)
+							colCount++;
 						if(i == j && board[i][j] == 2)
 							d1Count++;
 						if((2-i) == j && board[i][j] == 2)
@@ -93,9 +96,9 @@ function fillSpace(num)
 					
 					for(j = 0; j < board.length; j++)
 					{
-						if(colCount > 1 && board[i][j] == 0)
+						if(rowCount > 1 && board[i][j] == 0)
 							ai = String(i+1) + String(j+1);
-						if(rowCount > 1 && board[j][i] == 0)	
+						if(colCount > 1 && board[j][i] == 0)	
 							ai = String(j+1) + String(i+1);
 						if(i == j && d1Count > 1 && board[i][j] == 0)
 							ai = String(i+1) + String(j+1);
