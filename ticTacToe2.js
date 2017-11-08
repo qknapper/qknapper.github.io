@@ -33,28 +33,23 @@ function fillSpace(num)
 		if(catsGame < 13)
 		{
 			
-			//	AI - Algorithm
-			//				Less optimal moves come first and are overwritten if a more optimal move is found
-		
-					//	Board
-						//			Col1	Col2	Col3
-						//	Row1	 11		12		13
-						//	Row2	 21		22		23
-						//	Row3	 31		32		33
-						//		Diag2					Diag1
+			/*	AI - Algorithm
+						Less optimal moves come first and are overwritten if a more optimal move is found
+
+								Col1	Col2	Col3
+						Row1	 11		12		13
+						Row2	 21		22		23
+						Row3	 31		32		33
+							Diag2					Diag1	*/
 				
 			var ai;
 			var aiCurrent, aiSquare;
-			/*
 			var board = 
 			[
 				[parseInt(s11.innerHTML), parseInt(s12.innerHTML), parseInt(s13.innerHTML)],
 				[parseInt(s21.innerHTML), parseInt(s22.innerHTML), parseInt(s23.innerHTML)],
 				[parseInt(s31.innerHTML), parseInt(s32.innerHTML), parseInt(s33.innerHTML)]
-			];	
-			*/
-			
-			var board = [ [1,2,3], [4,5,6], [7,8,9] ];
+			];
 		
 	
 			//	i) Random Space
@@ -88,9 +83,9 @@ function fillSpace(num)
 			
 					for(j = 0; j < 2*board[i%3].length; j++)
 					{
-						if(j < 3 && board[i][j] == team)
+						if(j < 3 && board[i%3][j%3] == team)
 							colCount++;
-						if(i < 3 && board[j][i] == team)
+						if(i < 3 && board[j%3][i%3] == team)
 							rowCount++;
 						if(i == j && i < 3 && j < 3 && board[i][j] == 2)
 							d1count++;
