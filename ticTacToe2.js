@@ -97,9 +97,9 @@ function fillSpace(num)
 							ai = String(i+1) + String(j+1);
 						if(rowCount > 1 && board[j][i] == 0)	
 							ai = String(j+1) + String(i+1);
-						if(i == j && d1Count > 1 && board[j][i] == 0)
+						if(i == j && d1Count > 1 && board[i][j] == 0)
 							ai = String(i+1) + String(j+1);
-						if((2-i) == j && d2Count > 1 && board[j][i] == 0)
+						if((2-i) == j && d2Count > 1 && board[i][j] == 0)
 							ai = String(i+1) + String(j+1);
 					}
 				}
