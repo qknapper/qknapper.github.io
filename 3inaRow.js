@@ -20,7 +20,7 @@ function fillSpace(num)
 	square.innerHTML = '<img src="QbearSquare.png" alt="QuinnBearSquare" title="QuinnBearSquare" style="width:90%; height:90%" border="2">';
 	if(checkWin())
 	{
-		response.innerHTML = "You win! Congratulations!!! &ensp; Refresh to play again!";
+		response.innerHTML = "<br> You win! Congratulations!!! &ensp; Refresh to play again!";
 	}
 	else
 	{
@@ -117,7 +117,7 @@ function fillSpace(num)
 				response.innerHTML = "<br> You lose :( &ensp; Refresh for a rematch!!";
 		}
 		else
-			response.innerHTML = "<br>It's a tie... Refresh to try again!";
+			response.innerHTML = "<br> It's a tie... Refresh to try again!";
 	}
 }
 
