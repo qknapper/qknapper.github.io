@@ -45,12 +45,16 @@ function fillSpace(num)
 				
 			var ai;
 			var aiCurrent, aiSquare;
+			/*
 			var board = 
 			[
 				[parseInt(s11.innerHTML), parseInt(s12.innerHTML), parseInt(s13.innerHTML)],
 				[parseInt(s21.innerHTML), parseInt(s22.innerHTML), parseInt(s23.innerHTML)],
 				[parseInt(s31.innerHTML), parseInt(s32.innerHTML), parseInt(s33.innerHTML)]
-			];		
+			];	
+			*/
+			
+			var board = [ [1,2,3], [4,5,6], [7,8,9] ];
 		
 	
 			//	i) Random Space
