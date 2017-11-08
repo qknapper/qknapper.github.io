@@ -100,7 +100,7 @@ function fillSpace(num)
 						if(i == j && d1Count > 1 && board[j][i] == 0)
 							ai = String(i+1) + String(j+1);
 						if((2-i) == j && d2Count > 1 && board[j][i] == 0)
-							ai = String(i+1) + String((j+1);
+							ai = String(i+1) + String(j+1);
 					}
 				}
 			}
