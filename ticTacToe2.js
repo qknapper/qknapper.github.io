@@ -88,13 +88,13 @@ function fillSpace(num)
 						if(i < 3 && board[j%3][i%3] == team)
 							rowCount++;
 						if(i == j && i < 3 && j < 3 && board[i][j] == 2)
-							d1count++;
+							d1Count++;
 						if((2-i) == j && i < 3 && j < 3 && board[i][j] == 2)
-							d2count++;
+							d2Count++;
 				
 						if(colCount > 1 && board[i%3][j%3] == 0)
 							ai = String((i%3)+1) + String((j%3)+1);
-						if(rowCount > 1 && board[j%3][i%3] == 0)
+						if(rowCount > 1 && board[j%3][i%3] == 0)	
 							ai = String((j%3)+1) + String((i%3)+1);
 						if(i == j && d1Count > 1 && board[j%3][i%3] == 0)
 							ai = String((i%3)+1) + String((j%3)+1);
