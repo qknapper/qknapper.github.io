@@ -87,9 +87,9 @@ function fillSpace(num)
 							colCount++;
 						if(i < 3 && board[j%3][i%3] == team)
 							rowCount++;
-						if(i == j && i < 3 && j < 3 && board[i][j] == 2)
+						if(i == j && i < 3 && j < 3 && board[i%3][j%3] == 2)
 							d1Count++;
-						if((2-i) == j && i < 3 && j < 3 && board[i][j] == 2)
+						if((2-i) == j && i < 3 && j < 3 && board[i%3][j%3] == 2)
 							d2Count++;
 				
 						if(colCount > 1 && board[i%3][j%3] == 0)
@@ -108,9 +108,10 @@ function fillSpace(num)
 			aiSquare = document.getElementById('s' + ai);
 		
 			aiCurrent.innerHTML = 2;
+			response.innerHTML = ai;
 			aiSquare.innerHTML = '<img src="trogdorSquare.png" alt="trogdorSquare" title="trogdorSquare" style="width:90%; height:90%" border="2">';
 			if(checkWin())
-				response.innerHTML = "<br> You lose :( &ensp Refresh for a rematch!!";
+				response.innerHTML = "<br> You lose :( &ensp; Refresh for a rematch!!";
 		}
 		else
 			response.innerHTML = "<br>It's a tie... Refresh to try again!";
