@@ -15,6 +15,7 @@ function fillSpace(num)
 	var s33 = document.getElementById('33');
 	var sentinel = true;
 		
+	//	User turn
 	current.innerHTML = 1;
 	square.innerHTML = '<img src="QbearSquare.png" alt="QuinnBearSquare" title="QuinnBearSquare" style="width:90%; height:90%" border="2">';
 	if(checkWin())
@@ -23,55 +24,94 @@ function fillSpace(num)
 		sentinel = false;
 	}
 	
-	// AI - Algorithm
-				//			Col1	Col2	Col3
-				//	Row1	 1		2		3
-				//	Row2	 4		5		6
-				//	Row3	 7		8		9
-				//		Diag2					Diag1
-	var board = 
-		[
-			[s11.innerHTML, s12.innerHTML, s13.innerHTML],
-			[s21.innerHTML, s22.innerHTML, s23.innerHTML],
-			[s31.innerHTML, s32.innerHTML, s33.innerHTML]
-		];
-		// Check for a winning move
-	var i, j;
-	for(i = 0; i < board.length; i++)
+	if(sentinel)
 	{
-		for(i = j; j < board[0].length; i++)
-		{
-			
-		}
-	}
-		
-		
-	// AI - Random
-	ai = String(Math.floor(Math.random() * 3 + 1)) + String(Math.floor(Math.random() * 3 + 1));
-	var aiCurrent;
-	var aiSquare;
-	var empty;
-	var catsGame = parseInt(s11.innerHTML) + parseInt(s12.innerHTML) + parseInt(s13.innerHTML)
+		//	Cats Game
+		var catsGame = parseInt(s11.innerHTML) + parseInt(s12.innerHTML) + parseInt(s13.innerHTML)
 					+ parseInt(s21.innerHTML) + parseInt(s22.innerHTML) + parseInt(s23.innerHTML)
 					+ parseInt(s31.innerHTML) + parseInt(s32.innerHTML) + parseInt(s33.innerHTML);
-	
-	while(sentinel && (catsGame < 13))
-	{
-		aiCurrent = document.getElementById(ai);
-		aiSquare = document.getElementById('s' + ai);
-		empty = (aiCurrent.innerHTML == 0);
-		if(empty)
+		if(catsGame < 13)
 		{
+			
+			//	AI - Algorithm
+		
+					//	Board
+						//			Col1	Col2	Col3
+						//	Row1	 11		12		13
+						//	Row2	 21		22		23
+						//	Row3	 31		32		33
+						//		Diag2					Diag1
+				
+			var ai;
+			var aiCurrent, aiSquare;
+	
+			//	i) Random Space
+			while(sentinel)
+			{
+				ai = String(Math.floor(Math.random() * 3 + 1)) + String(Math.floor(Math.random() * 3 + 1));
+				aiCurrent = document.getElementById(ai);
+				if(aiCurrent.innerHTML == 0)
+					sentinel = false;
+			}
+		
+			//	ii) Checks for a winning move for either team.
+			//			Because it checks for team = 1 (user) first, a winning move for the ai
+			//			will overwrite a move to prevent the user from winning.
+		
+			var board = 
+			[
+				[parseInt(s11.innerHTML), parseInt(s12.innerHTML), parseInt(s13.innerHTML)],
+				[parseInt(s21.innerHTML), parseInt(s22.innerHTML), parseInt(s23.innerHTML)],
+				[parseInt(s31.innerHTML), parseInt(s32.innerHTML), parseInt(s33.innerHTML)]
+			];		
+		
+			var team;
+			var rowCount, colCount;
+			var d1Count = 0;
+			var d2Count = 0;
+			var i, j;
+	
+			for(team = 1; team <3; team++)
+			{
+				for(i = 0; i < 2*board.length; i++)
+				{
+					colCount = 0;
+					rowCount = 0;
+			
+					for(j = 0; j < 2*board[i%3].length; j++)
+					{
+						if(j < 3 && board[i][j] == team)
+							colCount++;
+						if(i < 3 && board[j][i] == team)
+							rowCount++;
+						if(i < 3 && j < 3 && i == j && board[i][j] == 2)
+							d1count++;
+						if(i < 3 && j < 3 && (2-i) == j && board[i][j] == 2)
+							d2count++;
+				
+						if(colCount > 1 && board[i%3][j%3] == 0)
+							ai = String(i%3) + String(j%3);
+						if(rowCount > 1 && board[j%3][i%3] == 0)
+							ai = String(j%3) + String(i%3);
+						if(d1Count > 1 && board[j%3][i%3] == 0)
+							ai = String(j%3) + String(i%3);
+						if(d2Count > 1 && board[j%3][i%3] == 0)
+							ai = String(j%3) + String(i%3);
+					}
+				}
+			}
+		
+			aiCurrent = document.getElementById(ai);
+			aiSquare = document.getElementById('s' + ai);
+		
 			aiCurrent.innerHTML = 2;
 			aiSquare.innerHTML = '<img src="trogdorSquare.png" alt="trogdorSquare" title="trogdorSquare" style="width:90%; height:90%" border="2">';
-			if(checkWin()) 
-				response.innerHTML = '<br> You lost :( Refresh to try again!';
-			sentinel = false;
+			if(checkWin())
+				response.innerHTML = "<br> You lose :( &ensp Refresh for a rematch!!";
 		}
-		else ai = String(Math.floor(Math.random() * 3 + 1)) + String(Math.floor(Math.random() * 3 + 1));
+		else
+			response.innerHTML = "<br>It's a tie... Refresh to try again!";
 	}
-	
-	if((catsGame >= 13) && !(checkWin())) response.innerHTML = "<br>It's a tie... Refresh for a rematch!";
 }
 
 function checkWin()
