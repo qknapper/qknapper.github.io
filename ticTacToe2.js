@@ -112,7 +112,6 @@ function fillSpace(num)
 			aiSquare = document.getElementById('s' + ai);
 		
 			aiCurrent.innerHTML = 2;
-			response.innerHTML = ai;
 			aiSquare.innerHTML = '<img src="trogdorSquare.png" alt="trogdorSquare" title="trogdorSquare" style="width:90%; height:90%" border="2">';
 			if(checkWin())
 				response.innerHTML = "<br> You lose :( &ensp; Refresh for a rematch!!";
