@@ -62,7 +62,7 @@ function fillSpace(num)
 			}
 			
 			//	ii) Play in middle
-			if(board[1][1] == 0)
+			if(parseInt(s22.innerHTML) == 0)
 				ai = "22";
 			
 			//	iii) Checks for a winning move for either team.
