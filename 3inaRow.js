@@ -92,7 +92,7 @@ function fillSpace(num)
 								colCount++;
 							if(i == j && board[i][j] == 2)
 								d1Count++;
-							if((2-i) == j && board[i][j] == 2)
+							if(i == (2-j) && board[i][j] == 2)
 								d2Count++;
 						}
 						
@@ -104,7 +104,7 @@ function fillSpace(num)
 								ai = String(j+1) + String(i+1);
 							if(i == j && d1Count > 1 && board[i][j] == 0)
 								ai = String(i+1) + String(j+1);
-							if((2-i) == j && d2Count > 1 && board[i][j] == 0)
+							if(i == (2-j) && d2Count > 1 && board[i][j] == 0)
 								ai = String(i+1) + String(j+1);
 						}
 					}
