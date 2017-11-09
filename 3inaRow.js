@@ -76,6 +76,7 @@ function fillSpace(num)
 		
 				for(team = 1; team < 3; team++)
 				{
+					
 					d1Count = 0;
 					d2Count = 0;
 					
@@ -108,6 +109,7 @@ function fillSpace(num)
 								ai = String(i+1) + String(j+1);
 						}
 					}
+					*/
 				}
 			
 				aiCurrent = document.getElementById(ai);
