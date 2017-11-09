@@ -91,9 +91,9 @@ function fillSpace(num)
 								rowCount++;
 							if(board[j][i] == team)
 								colCount++;
-							if(i == j && board[i][j] == 2)
+							if(i == j && board[i][j] == team)
 								d1Count++;
-							if(i == (2-j) && board[i][j] == 2)
+							if(i == (2-j) && board[i][j] == team)
 								d2Count++;
 						}
 						
