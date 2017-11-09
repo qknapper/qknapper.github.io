@@ -109,7 +109,6 @@ function fillSpace(num)
 								ai = String(i+1) + String(j+1);
 						}
 					}
-					*/
 				}
 			
 				aiCurrent = document.getElementById(ai);
