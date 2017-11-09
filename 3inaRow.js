@@ -17,7 +17,7 @@ function fillSpace(num)
 		
 	//	User turn
 	current.innerHTML = 1;
-	if(!checkwin())
+	if(!checkWin())
 	{
 		square.innerHTML = '<img src="QbearSquare.png" alt="QuinnBearSquare" title="QuinnBearSquare" style="width:90%; height:90%" border="2">';
 		if(checkWin())
