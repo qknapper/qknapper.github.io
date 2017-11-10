@@ -123,7 +123,7 @@ function fillSpace(num)
 					}
 					else
 						response.innerHTML = "<br> It's a tie... Refresh to try again!";
-				}, 1000*(Math.floor(Math.random() * 3 + 1)));
+				}, 1000*(Math.random());
 	}
 }
 
