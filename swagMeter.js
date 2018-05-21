@@ -50,6 +50,8 @@ function getSwag()
 		score += 20;
 	if(name.toLowerCase() === "quinn knapper" || name.toLowerCase() === "quinnknapper" || name.toLowerCase() === "quinn")
 		score = 1000000;
+	if(name.toLowerCase() === "seth daly" || name.toLowerCase() === "sethdaly")
+		{score = 69.6969696969; level = "<span style='color:red'> Bewbs ;) </span>";}
 	if(name.toLowerCase() === "jacob blevins" ||name.toLowerCase() === "jacobblevins")
 		{score = "-999999999999999999999999"; level = "<span style='color:red'> turd wanker </span>";}
 	
