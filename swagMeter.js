@@ -52,6 +52,10 @@ function getSwag()
 		score = 1000000;
 	if(name.toLowerCase() === "seth daly" || name.toLowerCase() === "sethdaly")
 		{score = 69.6969696969; level = "<span style='color:red'> Bewbs ;) </span>";}
+	if(name.toLowerCase() === "gunna" || name.toLowerCase() === "gunna")
+		{score = 89; level = "<span style='color:green'> big dick ;) </span>";}
+	if(name.toLowerCase() === "surguard" || name.toLowerCase() === "surguard")
+		{score = 83; level = "<span style='color:green'> big dick ;) </span>";}
 	if(name.toLowerCase() === "jacob blevins" ||name.toLowerCase() === "jacobblevins")
 		{score = "-999999999999999999999999"; level = "<span style='color:red'> turd wanker </span>";}
 	
