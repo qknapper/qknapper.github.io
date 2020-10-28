@@ -78,7 +78,7 @@ function getSwag()
 	}
 	
 // HTML Response Output
-	if level2 != "":
+	if(level2 != "")
 	{
 		level = level2;
 	}
