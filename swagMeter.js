@@ -66,12 +66,12 @@ function getSwag()
 		level = "<span style='color:red'> low </span>";
 		document.getElementById('swagMeter').src = "swagMeterLow.png";
 	}
-	if(70 <= score && score < 84)
+	if(70 <= score && score < 82)
 	{
 		level = "<span style='color:yellow'> medium </span>";
 		document.getElementById('swagMeter').src = "swagMeterMedium.png";
 	}
-	if(84 <= score)
+	if(82 <= score)
 	{
 		level = "<span style='color:green'> high </span>";
 		document.getElementById('swagMeter').src = "swagMeterHigh.png";
