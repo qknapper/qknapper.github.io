@@ -6,6 +6,7 @@ function getSwag()
 	var response = document.getElementById('response');
 	var score = 0;
 	var level;
+	var level2 = "";
 	var count = 0;
 	var temp;
 	var space = 0;
@@ -51,13 +52,13 @@ function getSwag()
 	if(name.toLowerCase() === "quinn knapper" || name.toLowerCase() === "quinnknapper" || name.toLowerCase() === "quinn")
 		score = 1000000;
 	if(name.toLowerCase() === "seth daly" || name.toLowerCase() === "sethdaly")
-		{score = 69.6969696969; level = "<span style='color:red'> Bewbs </span>";}
+		{score = 69.6969696969; level2 = "<span style='color:red'> Bewbs </span>";}
 	if(name.toLowerCase() === "gunna" || name.toLowerCase() === "gunna")
-		{score = 89; level = "<span style='color:green'> big dick </span>";}
+		{score = 89; level2 = "<span style='color:green'> big dick </span>";}
 	if(name.toLowerCase() === "surguard" || name.toLowerCase() === "surguard")
-		{score = 83; level = "<span style='color:green'> big dick </span>";}
+		{score = 83; level2 = "<span style='color:green'> big dick </span>";}
 	if(name.toLowerCase() === "jacob blevins" ||name.toLowerCase() === "jacobblevins")
-		{score = "-999999999999999999999999"; level = "<span style='color:red'> turd wanker </span>";}
+		{score = "-999999999999999999999999"; level2 = "<span style='color:red'> turd wanker </span>";}
 	
 // Swag Level Assignment + Meter Image Editing
 	if(0 < score && score < 70)
@@ -65,17 +66,19 @@ function getSwag()
 		level = "<span style='color:red'> low </span>";
 		document.getElementById('swagMeter').src = "swagMeterLow.png";
 	}
-	if(70 <= score && score < 85)
+	if(70 <= score && score < 84)
 	{
 		level = "<span style='color:yellow'> medium </span>";
 		document.getElementById('swagMeter').src = "swagMeterMedium.png";
 	}
-	if(85 <= score)
+	if(84 <= score)
 	{
 		level = "<span style='color:green'> high </span>";
 		document.getElementById('swagMeter').src = "swagMeterHigh.png";
 	}
 	
 // HTML Response Output
+	if level2 != "":
+	{ level = level2 }
 	response.innerHTML = name + " has a swag level of " + score + "%. That is a " + level + " swag level.";
 }
