@@ -79,6 +79,8 @@ function getSwag()
 	
 // HTML Response Output
 	if level2 != "":
-	{ level = level2 }
+	{
+		level = level2;
+	}
 	response.innerHTML = name + " has a swag level of " + score + "%. That is a " + level + " swag level.";
 }
