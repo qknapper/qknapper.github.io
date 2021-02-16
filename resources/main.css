@@ -6,3 +6,15 @@ p.header {
 p.body {
 	font-size: 20px;
 }
+
+div.sidebar {
+	float: left;
+	padding-top: 150px;
+	padding-left: 43px;
+}
+
+div.page {
+	padding-top: 150px;
+	padding-left: 150px;
+	padding-right: 50px
+}
