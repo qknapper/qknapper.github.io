@@ -18,16 +18,17 @@ a:visited {
 
 @media (min-aspect-ratio: 1920/1080) {
 	div.sidebar {
-		float: left;
-		padding-top: 7.8125%;
-		padding-left: 2.23958%;
-		padding-right: 95.52083%;
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 2.23958%;
+		width: 2.43959%;
 	}
 
 	div.page {
-		padding-top: 7.8125%;
-		padding-left: 7.8125%;
-		padding-right: 2.60417%;
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 2.23958%;
+		width: 90%;
 	}
 
 	img.sidebar {
