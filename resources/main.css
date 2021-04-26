@@ -15,8 +15,12 @@ a:visited {
 }
 
 
-
+/* fat */
 @media (min-aspect-ratio: 1920/1080) {
+	body {
+		padding-top: 5.625vw;
+	}
+
 	div.sidebar {
 		display: inline-block;
 		vertical-align: top;
@@ -29,6 +33,31 @@ a:visited {
 		vertical-align: top;
 		margin-left: 2.23958%;
 		width: 90%;
+	}
+
+	img.sidebar {
+		width: 100%;
+	}
+}
+
+/* skinny */
+@media (max-aspect-ratio: 1920/1080) {
+	body {
+		padding-top: 10vh;
+	}
+
+	div.sidebar {
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 3.98147vh;
+		width: 4.33705vh;
+	}
+
+	div.page {
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 3.98147vh;
+		width: 70%;
 	}
 
 	img.sidebar {
