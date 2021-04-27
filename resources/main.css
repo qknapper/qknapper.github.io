@@ -33,6 +33,7 @@ a:hover {display: inline-block;}
 
 	div.sidebar {
 		display: inline-block;
+		position: fixed;
 		vertical-align: top;
 		margin-left: 2.23958%;
 		width: 2.43959%;
@@ -41,7 +42,7 @@ a:hover {display: inline-block;}
 	div.page {
 		display: inline-block;
 		vertical-align: top;
-		margin-left: 2.23958%;
+		margin-left: 6.71874%;
 		width: 90%;
 	}
 
@@ -63,6 +64,7 @@ a:hover {display: inline-block;}
 
 	div.sidebar {
 		display: inline-block;
+		position: fixed;
 		vertical-align: top;
 		margin-left: 3.98147vh;
 		width: 4.33705vh;
@@ -71,7 +73,7 @@ a:hover {display: inline-block;}
 	div.page {
 		display: inline-block;
 		vertical-align: top;
-		margin-left: 3.98147vh;
+		margin-left: 11.94441vh;
 		width: 70%;
 	}
 
