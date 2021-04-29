@@ -21,6 +21,9 @@ p.body {
 	font-size: 20px;
 }
 
+a {
+	display: inline-block;
+}
 a:link {
 	color: #001149;
 }
@@ -33,6 +36,17 @@ a:hover span {
 	text-decoration: underline;
 }
 a:hover {display: inline-block;}
+
+span.fakeLink {
+	color: #092f18;
+	text-decoration: underline;
+}
+span.fakeLink span {display: none;}
+span.fakeLink:hover span {
+	display: inline-block;
+	text-decoration: underline;
+}
+span.fakeLink:hover {display: inline-block;}
 
 td.feature {
 		width: 50%;
@@ -71,6 +85,11 @@ td.feature {
 	}
 
 	video.playingCards {
+		width: 45%;
+		border: 3px solid #001149;
+		display: inline-block;
+	}
+	img.playingCards {
 		width: 45%;
 		border: 3px solid #001149;
 		display: inline-block;
@@ -119,6 +138,10 @@ td.feature {
 	}
 
 	video.playingCards {
+		width: 100%;
+		border: 3px solid #001149;
+	}
+	img.playingCards {
 		width: 100%;
 		border: 3px solid #001149;
 	}
