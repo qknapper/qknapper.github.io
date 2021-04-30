@@ -1,3 +1,9 @@
+body {
+	 background-repeat: no-repeat;
+	 background-attachment: fixed;
+	 background-position: fixed;
+}
+
 div.section {
 	padding-bottom: 20px;
 }
