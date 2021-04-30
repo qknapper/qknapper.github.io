@@ -58,6 +58,7 @@ td.feature {
 @media (min-aspect-ratio: 1920/1080) {
 	body {
 		padding-top: 5.625vw;
+		background-size: 100vw;
 	}
 
 	div.sidebar {
@@ -111,6 +112,7 @@ td.feature {
 @media (max-aspect-ratio: 1920/1080) {
 	body {
 		padding-top: 10vh;
+		background-size: auto 100vh;
 	}
 
 	div.sidebar {
