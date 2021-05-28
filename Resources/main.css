@@ -97,6 +97,7 @@ td.feature {
 		border: 3px solid #001149;
 		display: inline-block;
 	}
+
 	img.playingCards {
 		width: 45%;
 		border: 3px solid #001149;
@@ -112,6 +113,23 @@ td.feature {
 
 	td.feature {
 		height: 7vh;
+	}
+
+	.iframe-container {
+		width: 50%;
+		border: 3px solid #001149;
+		overflow: hidden;
+		padding-top: 28.125%; /* 16:9 - 56.25 @ 50%*/
+		position: relative;
+	}
+
+	.iframe-container iframe {
+		border: 0;
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
 	}
 }
 
@@ -161,6 +179,23 @@ td.feature {
 
 	td.feature {
 		height: 3vh;
+	}
+
+	.iframe-container {
+		width: 100%;
+		border: 3px solid #001149;
+		overflow: hidden;
+		padding-top: 56.25%; /* 16:9 - 56.25 @ 100%*/
+		position: relative;
+	}
+
+	.iframe-container iframe {
+		border: 0;
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
 	}
 
 }
