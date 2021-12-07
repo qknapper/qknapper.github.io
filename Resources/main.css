@@ -65,6 +65,13 @@ img.mascot {
 		vertical-align:	middle
 }
 
+button.standardButton {
+	transition-duration: 0.25s;
+}
+
+button:hover.standardButton.standardButton {
+		background-color: #c0cfff;
+	}
 
 /* fat */
 @media (min-aspect-ratio: 1920/1080) {
@@ -125,6 +132,49 @@ img.mascot {
 		vertical-align: top;
 		margin-left: 2.23958%;
 		width: 45%;
+	}
+
+	img.iframe-placeholder {
+		width: 50%;
+		border: 3px solid #001149;
+	}
+
+	button.standardButton {
+		height: 34px;
+		width: 12%;
+		text-align: center;
+		font-family: inherit;
+		font-size: 20px;
+		border: 1px solid #001149;
+	}
+	button:focus.standardButton {
+		height: 34px;
+		width: 12%;
+		text-align: center;
+		font-family: inherit;
+		font-size: 20px;
+		outline:  none;
+		background-color: #cad7bb;
+		border: 1px solid #001149;
+	}
+
+	input.standardInput {
+		width: 25%;
+		height: 30px;
+		font-family: inherit;
+		font-size: 20px;
+		padding-left: 10px;
+		border: 1px solid #001149;
+	}
+
+	input:focus.standardInput {
+		width: 25%;
+		height: 30px;
+		font-family: inherit;
+		font-size: 20px;
+		padding-left: 10px;
+		border: 1px solid #001149;
+		outline:  none;
 	}
 
 	.iframe-container {
@@ -191,6 +241,54 @@ img.mascot {
 
 	td.feature {
 		height: 3vh;
+	}
+
+	img.iframe-placeholder {
+		width: 100%;
+		border: 3px solid #001149;
+	}
+
+	img.iframe-placeholder {
+		width: 100%;
+		border: 3px solid #001149;
+	}
+
+	button.standardButton {
+		height: 34px;
+		width: 25%;
+		text-align: center;
+		font-family: inherit;
+		font-size: 20px;
+		border: 1px solid #001149;
+	}
+	button:focus.standardButton {
+		height: 34px;
+		width: 25%;
+		text-align: center;
+		font-family: inherit;
+		font-size: 20px;
+		outline:  none;
+		background-color: #cad7bb;
+		border: 1px solid #001149;
+	}
+
+	input.standardInput {
+		width: 50%;
+		height: 30px;
+		font-family: inherit;
+		font-size: 20px;
+		padding-left: 10px;
+		border: 1px solid #001149;
+	}
+
+	input:focus.standardInput {
+		width: 50%;
+		height: 30px;
+		font-family: inherit;
+		font-size: 20px;
+		padding-left: 10px;
+		border: 1px solid #001149;
+		outline:  none;
 	}
 
 	.iframe-container {
