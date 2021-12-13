@@ -134,8 +134,13 @@ button:hover.standardButton.standardButton {
 		width: 45%;
 	}
 
-	img.iframe-placeholder {
+	img.graph-placeholder {
 		width: 50%;
+		border: 3px solid #001149;
+	}
+	div.plotlyDiv {
+		width: 50%;
+		height: 43.85vh;
 		border: 3px solid #001149;
 	}
 
@@ -248,8 +253,14 @@ button:hover.standardButton.standardButton {
 		border: 3px solid #001149;
 	}
 
-	img.iframe-placeholder {
+	img.graph-placeholder {
 		width: 100%;
+		border: 3px solid #001149;
+	}
+
+	div.plotlyDiv {
+		width: 100%;
+		height: 28.125vh;
 		border: 3px solid #001149;
 	}
 
