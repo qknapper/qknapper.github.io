@@ -229,8 +229,8 @@ function getSwag()
 		images: [ { 
 			source: "SwagMeter/graphBack.png",
 			sizing: "stretch",
-			xref: "paper",
-			yref: "paper",
+			xref: "container",
+			yref: "container",
 			x: 0,
 			y: 1,
 			layer: "below",
