@@ -138,7 +138,16 @@ button:hover.standardButton.standardButton {
 		width: 50%;
 		border: 3px solid #001149;
 	}
+	
+	img.graphBackground {
+		position: absolute;
+		width: 50%;
+		height: 43.85vh;
+		border: 3px solid #001149;
+	}
+
 	div.plotlyDiv {
+		position:  absolute;
 		width: 50%;
 		height: 43.85vh;
 		border: 3px solid #001149;
