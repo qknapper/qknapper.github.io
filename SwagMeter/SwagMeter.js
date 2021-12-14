@@ -129,6 +129,8 @@ function getSwag()
 	// Exceptions
 	if (processed.includes("QUINN")) { swag = (swag + 100)/2; }
 	if (processed.includes("KNAPPER")) { swag = (swag + 100)/2; }
+	if (processed.includes("JOELEMBIID")) { swag = 0; }
+	if (processed.includes("JACOBBLEVINS")) { swag = 3*(swag)/4; }
 	swag = swag.toFixed(2);
 
 	// swagTest.innerHTML += "\t\t\t" + "(" + swag + ")";
@@ -151,6 +153,10 @@ function getSwag()
 	if (processed.includes("JACOBBLEVINS")) {
 		levelCat = "<span style='color: red; font-weight: bold''>turd wanker</span>";
 		swagColor = "<span style='color: red; font-weight: bold''>" + swag + "</span>";
+	}
+	if (processed.includes("JACOBBLEVINS")) {
+		levelCat = "<span style='color: green; font-weight: bold''>Big Handsome</span>";
+		swagColor = "<span style='color: green; font-weight: bold''>" + swag + "</span>";
 	}
 
 	swagLevel.innerHTML = "" + input + " has a composite swag score of " + swagColor + ". That is a " + levelCat + " level of swag.";
