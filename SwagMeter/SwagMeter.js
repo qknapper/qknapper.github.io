@@ -154,7 +154,7 @@ function getSwag()
 		levelCat = "<span style='color: red; font-weight: bold''>turd wanker</span>";
 		swagColor = "<span style='color: red; font-weight: bold''>" + swag + "</span>";
 	}
-	if (processed.includes("JACOBBLEVINS")) {
+	if (processed.includes("CODYZELLER")) {
 		levelCat = "<span style='color: green; font-weight: bold''>Big Handsome</span>";
 		swagColor = "<span style='color: green; font-weight: bold''>" + swag + "</span>";
 	}
