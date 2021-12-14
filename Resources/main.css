@@ -148,8 +148,10 @@ button:hover.standardButton.standardButton {
 
 	div.plotlyDiv {
 		position:  absolute;
-		width: 50%;
-		height: 43.85vh;
+		width: 1000px;
+		height:  500px;
+		/*width: 50%;
+		height: 43.85vh; */
 		border: 3px solid #001149;
 	}
 

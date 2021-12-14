@@ -153,7 +153,7 @@ function getSwag()
 		swagColor = "<span style='color: red; font-weight: bold''>" + swag + "</span>";
 	}
 
-	swagLevel.innerHTML += "" + input + " has a composite swag score of " + swagColor + ". That is a " + levelCat + " level of swag.";
+	swagLevel.innerHTML = "" + input + " has a composite swag score of " + swagColor + ". That is a " + levelCat + " level of swag.";
 
 	swagHolder = document.getElementById("swagHolder");
 	swagHolder.innerHTML = "<div id='swagGraph' class='plotlyDiv'></div>";
@@ -217,6 +217,8 @@ function getSwag()
 	var data = [ shape, graphCatShadows, graphCats, graphScores ];
 
 	var layout = {
+		autosize: true,
+		margin: {t: 0, b: 0, l: 0, r: 0},
 		title: {
 			text: input + "'s Swag Distribution Report",
 			font: {
@@ -224,18 +226,27 @@ function getSwag()
 				color: "rgb(9, 47, 24)"
 			},
 			xref: "container",
-			x: 0.025
+			x: 0.025,
+			y: 0.93
 		},
 		paper_bgcolor: 'rgba(0,0,0,0)',
    		plot_bgcolor: 'rgba(0,0,0,0)',
 		showlegend: false,
 		dragmode: false,
-		xaxis: { range: [-110, 450], fixedrange: true, showgrid: false, zeroline: false, showline: false, autotick: true, ticks: '', showticklabels: false },
-		yaxis: { range: [-110, 110], fixedrange: true, showgrid: false, zeroline: false, showline: false, autotick: true, ticks: '', showticklabels: false }
+		xaxis: { range: [-164, 506], fixedrange: true, showgrid: false, zeroline: false, showline: false, autotick: true, ticks: '', showticklabels: false },
+		yaxis: { range: [-159, 171], fixedrange: true, showgrid: false, zeroline: false, showline: false, autotick: true, ticks: '', showticklabels: false },
+		images: [{
+			source: "SwagMeter/graphBack.png",
+			sizing: 'stretch',
+			xref: 0, yref: 0,
+			x: 0, y: 1,
+			layer: 'below',
+			sizex: 1, sizey: 1,
+			opacity: 1
+		}]
 	};
 
 	var config = {
-		margin: { t: 0 },
 		displayModeBar: true,
 		modeBarButtonsToRemove: ["zoom2d", "pan2d", "select2d", "lasso2d", "zoomIn2d", "zoomOut2d", "autoScale2d", "resetScale2d"],
 		responsive: true
