@@ -98,27 +98,23 @@ function getSwag()
 	coolAvg = Math.pow( (coolTotal / processed.length), 3 );
 	coolScore = coolAvg / Math.pow( (614/9), 3 );
 	if (coolScore > 1) { coolScore = 1 / coolScore; }
-	coolScore = (coolScore * 100).toFixed(2);
 	// coolTest.innerHTML += "\t\t\t" + "(" + coolTotal + ", " + coolAvg + ", " + coolScore + ")";
 
 	// Raditude 
 	radRatio = radV / radC;
 	radScore = radRatio / (4 / 5);
 	if (radScore > 1) { radScore = 1 / radScore; }
-	radScore = (radScore * 100).toFixed(2);
 	// radTest.innerHTML += "\t\t\t" + "(" + radV + "/" + radC + ", " + radRatio + ", " + radScore + ")";
 
 	// Wickedness
 	wickedScore = wickedHigh / 17;
 	if (wickedScore > 1) { wickedScore = 1 / wickedScore; }
-	wickedScore = (wickedScore * 100).toFixed(2);
 	// wickedTest.innerHTML += "\t\t\t" + "(" + wickedHigh + ", " + wickedScore + ")";
 
 	// Grooviness
 	groovyRatio = groovyTally / processed.length;
 	groovyScore = groovyRatio / (8 / 9);
 	if (groovyScore > 1) { groovyScore = 1 / groovyScore; }
-	groovyScore = (groovyScore * 100).toFixed(2);
 	// groovyTest.innerHTML += "\t\t\t" + "(" + groovyTally + ", " + groovyRatio + ", " + groovyScore + ")";
 
 	// Swag Composite
@@ -127,12 +123,36 @@ function getSwag()
 	swag = 0*swagArr[0] + 0.25*swagArr[1] + 0.25*swagArr[2] + 0.5*swagArr[3]
 
 	// Exceptions
-	if (processed.includes("QUINN")) { swag = (swag + 100)/2; }
-	if (processed.includes("KNAPPER")) { swag = (swag + 100)/2; }
-	if (processed.includes("JOELEMBIID")) { swag = 0; }
-	if (processed.includes("JACOBBLEVINS")) { swag = 3*(swag)/4; }
+	if (processed.includes("QUINN")) {
+		coolScore = (coolScore + 100)/2;
+		radScore = (radScore + 100)/2;
+		wickedScore = (wickedScore + 100)/2;
+		groovyScore = (groovyScore + 100)/2;
+		swag = (swag + 100)/2; }
+	if (processed.includes("KNAPPER")) {
+		coolScore = (coolScore + 100)/2;
+		radScore = (radScore + 100)/2;
+		wickedScore = (wickedScore + 100)/2;
+		groovyScore = (groovyScore + 100)/2;
+		swag = (swag + 100)/2; }
+	if (processed.includes("JOELEMBIID")) {
+		coolScore = 0;
+		radScore = 0;
+		wickedScore = 0;
+		groovyScore = 0;
+		swag = 0;}
+	if (processed.includes("JACOBBLEVINS")) {
+		coolScore = 3*(coolScore)/4;
+		radScore = 3*(radScore)/4;
+		wickedScore = 3*(wickedScore)/4;
+		groovyScore = 3*(groovyScore)/4;
+		swag = 3*(swag)/4;}
+	
+	coolScore = (coolScore * 100).toFixed(2);
+	radScore = (radScore * 100).toFixed(2);
+	wickedScore = (wickedScore * 100).toFixed(2);
+	groovyScore = (groovyScore * 100).toFixed(2);
 	swag = swag.toFixed(2);
-
 	// swagTest.innerHTML += "\t\t\t" + "(" + swag + ")";
 
 	// Swag Level
