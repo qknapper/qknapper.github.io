@@ -152,6 +152,7 @@ function getSwag()
 	radScore = (radScore * 100).toFixed(2);
 	wickedScore = (wickedScore * 100).toFixed(2);
 	groovyScore = (groovyScore * 100).toFixed(2);
+	swag = 100 * swag;
 	swag = swag.toFixed(2);
 	// swagTest.innerHTML += "\t\t\t" + "(" + swag + ")";
 
