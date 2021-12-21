@@ -124,17 +124,17 @@ function getSwag()
 
 	// Exceptions
 	if (processed.includes("QUINN")) {
-		coolScore = (coolScore + 100)/2;
-		radScore = (radScore + 100)/2;
-		wickedScore = (wickedScore + 100)/2;
-		groovyScore = (groovyScore + 100)/2;
-		swag = (swag + 100)/2; }
+		coolScore = (coolScore + 1)/2;
+		radScore = (radScore + 1)/2;
+		wickedScore = (wickedScore + 1)/2;
+		groovyScore = (groovyScore + 1)/2;
+		swag = (swag + 1)/2; }
 	if (processed.includes("KNAPPER")) {
-		coolScore = (coolScore + 100)/2;
-		radScore = (radScore + 100)/2;
-		wickedScore = (wickedScore + 100)/2;
-		groovyScore = (groovyScore + 100)/2;
-		swag = (swag + 100)/2; }
+		coolScore = (coolScore + 1)/2;
+		radScore = (radScore + 1)/2;
+		wickedScore = (wickedScore + 1)/2;
+		groovyScore = (groovyScore + 1)/2;
+		swag = (swag + 1)/2; }
 	if (processed.includes("JOELEMBIID")) {
 		coolScore = 0;
 		radScore = 0;
