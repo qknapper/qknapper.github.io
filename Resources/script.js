@@ -12,5 +12,5 @@ function randomPage()
 {
 	var pages = ["Playing Cards", "SwagMeter", "Visitor'sLog"];
 	var random = Math.floor(Math.random() * pages.length);
-	window.location.href = 'qbear.org/' + pages[random];
+	window.location.href = pages[random];
 }
