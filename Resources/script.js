@@ -1,7 +1,7 @@
 function featuredPage() 
 {
 	var link = document.getElementById("FeaturedPage");
-	var pages = ["Playing Cards", "SwagMeter", "Visitor'sLog"];
+	var pages = ["PlayingCards", "SwagMeter", "Visitor'sLog"];
 	var images = ["cards", "swag", "visitor"];
 	var random = Math.floor(Math.random() * pages.length);
 
@@ -10,7 +10,7 @@ function featuredPage()
 
 function randomPage()
 {
-	var pages = ["Playing Cards", "SwagMeter", "Visitor'sLog"];
+	var pages = ["PlayingCards", "SwagMeter", "Visitor'sLog"];
 	var random = Math.floor(Math.random() * pages.length);
 	window.location.href = pages[random];
 }
