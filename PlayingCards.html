@@ -3,20 +3,21 @@
 <html>
 
 <head>
-	<title> qbear.org - Playing Cards</title>
+	<title> qbear.org - WebPage List</title>
 	<link rel="icon" href="Resources/icon.png" />
 	<link rel="stylesheet" type="text/css" href="Resources/main.css">
+	<script src="Resources/script.js"></script>
 </head>
 
-<body style="background-image: url('Resources/background.png');">	
+<body style="background-image: url('Resources/background.png')", onload="featuredPage();">	
 	
 	<div class="sidebar">
 		<p><a href="https://qbear.org"><img class="sidebar" src="Resources/home.png"></a></p>
 		<p><a href="Info"><img class="sidebar" src="Resources/info.png"></a></p>
 		<p><a href="What'sNew"><img class="sidebar" src="Resources/new.png"></a></p>
-		<p><a href="PlayingCards"><img class="sidebar" src="Resources/cards.png"></a></p>
-		<p><a href="Visitor'sLog"><img class="sidebar" src="Resources/visitor.png"></a></p>
-		<p><a href="SwagMeter"><img class="sidebar" src="Resources/swag.png"></a></p>
+		<p><a href="WebPageList"><img class="sidebar" src="Resources/list.png"></a></p>
+		<p id="FeaturedPage"></p> <!-- Featured (random on load) -->
+		<p><a onclick="randomPage()" href="javascript:void(0);"><img class="sidebar" src="Resources/random.png"></a></p> <!-- Random (on click) -->
 	</div>
 	<div class="page">
 		<div class="section">
@@ -339,7 +340,9 @@
 
 		<div class="section">
 			<p class="subheader">Rockets</p>
-			<img class="playingCards" src="PlayingCards/Backs/Rockets.jpg">
+			<video class="playingCards" poster="PlayingCards/Backs/Rockets.jpg" controls>
+				<source src="PlayingCards/Videos/Rockets.mp4" type="video/mp4">
+			</video>
 			<table class="playingCards">
 				<tr>
 					<td class="feature"><span class="featureName">Style: </span>Rockets</td>
@@ -355,7 +358,7 @@
 				</tr>
 				<tr>
 					<td class="feature"><a href="PlayingCards/Backs/Rockets.jpg" target="_blank">Image <span>(Rockets.jpg)</span></a></td>
-					<td class="feature"><span class="fakeLink">No Video <span>(for now...)</span></span></td>
+					<td class="feature"><a href="PlayingCards/Videos/Rockets.mp4" target="_blank">Video <span>(Rockets.mp4)</span></a></td>
 				</tr>
 			</table>
 		</div>

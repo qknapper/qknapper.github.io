@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title> qbear.org - WebPage List</title>
+	<link rel="icon" href="Resources/icon.png" />
+	<link rel="stylesheet" type="text/css" href="Resources/main.css">
+	<script src="Resources/script.js"></script>
+</head>
+
+<body style="background-image: url('Resources/background.png')", onload="featuredPage();">	
+	
+	<div class="sidebar">
+		<p><a href="https://qbear.org"><img class="sidebar" src="Resources/home.png"></a></p>
+		<p><a href="Info"><img class="sidebar" src="Resources/info.png"></a></p>
+		<p><a href="What'sNew"><img class="sidebar" src="Resources/new.png"></a></p>
+		<p><a href="WebPageList"><img class="sidebar" src="Resources/list.png"></a></p>
+		<p id="FeaturedPage"></p> <!-- Featured (random on load) -->
+		<p><a onclick="randomPage()" href="javascript:void(0);"><img class="sidebar" src="Resources/random.png"></a></p> <!-- Random (on click) -->
+	</div>
+	<div class="page">
+		<p class="header">Welcome!</p>
+		<div>
+			<p class="body">
+				What would you like to do today? Only you can answer that question, by selecting one of the webpages at <a  href="https://qbear.org">qbear.org</a> below! Have fun exploring :)
+			</p>
+
+			<p class="body">
+				<p class="body"><a href="https://qbear.org"><img class="weblistImage" src="Resources/home.png"></a> - <b><a  href="https://qbear.org">qbear.org</a>:</b> the home screen</p>
+				<p class="body"><a href="Info"><img class="weblistImage" src="Resources/info.png"></a> - <b>Info:</b> Learn more about me and my website</p>
+				<p class="body"><a href="What'sNew"><img class="weblistImage" src="Resources/new.png"></a> - <b>What's New:</b> Check out a list of the updates you missed here</p>
+				<p class="body"><a href="PlayingCards"><img class="weblistImage" src="Resources/cards.png"></a> - <b>Playing Cards:</b> Browse my collection of playing cards</p>
+				<p class="body"><a href="Visitor'sLog"><img class="weblistImage" src="Resources/visitor.png"></a> - <b>Visitor's Log:</b> Say hi and leave your mark on <a  href="https://qbear.org">qbear.org</a></p>
+				<p class="body"><a href="SwagMeter"><img class="weblistImage" src="Resources/swag.png"></a> - <b>Swag Meter:</b> Generate a comprehensive report detailing your swag levels</p>
+			</p>
+
+			<p class="body">
+				- Quinn Bear
+			</p>
+		</div>		
+	</div>
+
+</body>
+
+</html>

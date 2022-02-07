@@ -65,6 +65,11 @@ img.mascot {
 		vertical-align:	middle
 }
 
+img.weblistImage {
+		height:  50px;
+		vertical-align:	middle
+	}
+
 button.standardButton {
 	transition-duration: 0.25s;
 }
