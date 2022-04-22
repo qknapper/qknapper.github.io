@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title> qbear.org - LinkedIn Guess Who-ordle</title>
+	<link rel="icon" href="Resources/icon.png" />
+	<link rel="stylesheet" type="text/css" href="Resources/main.css">
+	<script src="Resources/script.js"></script>
+	<script src="LinkedInGuessWho-ordle/LinkedInGuessWho-ordle.js"></script>
+</head>
+
+<body style="background-image: url('Resources/background.png')", onload="featuredPage();">	
+	
+	<div class="sidebar">
+		<p><a href="https://qbear.org"><img class="sidebar" src="Resources/home.png"></a></p>
+		<p><a href="Info"><img class="sidebar" src="Resources/info.png"></a></p>
+		<p><a href="What'sNew"><img class="sidebar" src="Resources/new.png"></a></p>
+		<p><a href="WebPageList"><img class="sidebar" src="Resources/list.png"></a></p>
+		<p id="FeaturedPage"></p> <!-- Featured (random on load) -->
+		<p><a onclick="randomPage()" href="javascript:void(0);"><img class="sidebar" src="Resources/random.png"></a></p> <!-- Random (on click) -->
+	</div>
+	<div class="page">
+		<p class="header">LinkedIn Guess Who-ordle</p>
+		<div>
+			<p class="body">
+				Hi - Welcome to my wordle spinoff! On days that I feel like it, there will be a challenge here to test your powers of deduction and business acumen. You'll be provided with a LinkedIn post and 6 clues - from there you will be tasked with finding the LinkedIn profile that has reacted (all reactions) to the listed post and matches the bill. Unlike the standard wordle, you will have unlimited guesses - instead the 6 guesses have been converted into the 6 clues! You will unlock one new clue for every incorrect guess, however, you can also unlock clues early for the cost of one guess. 
+			</p>
+
+			<p class="body">
+				While completing the LinkedIn Guess Who-ordle (until getting the correct answer, giving up, or reaching 6 lines), the traditional colored squares summary will be built below for you to share. Rows represent the clues needed to get the correct answer. A shorter summary is the sign of a smarter sleuth. Columns represent your guesses. Steadier summaries are the result of a more systematic sleuth, and a skinnier summaries unlocked multiple clues at the expense of guesses. The interpretation guide is shown below.
+			</p>
+
+			<p class="body">&nbsp</p>
+			<p class="body">The Grid - rows x columns → clues x guesses</p>
+			<p class="listEntry">⬛ - The black square is a placeholder - exciting!</p>
+			<p class="listEntry">🟥 - Uh-oh! The red square appears when you get a guess wrong</p>
+			<p class="listEntry">🟨 - Wait! The yellow square appears when you forfeit a guess to unlock a clue</p>
+			<p class="listEntry">🟩 - Ding-ding! The green square appears when you solve the puzzle</p>
+			<p class="body">Here is an example to get you started:</p>
+			<p class="listEntry">🟥⬛⬛⬛⬛⬛ - One clue, one guess (and it was wrong)</p>
+			<p class="listEntry">🟥🟥⬛⬛⬛⬛ - Two clues, two guesses (wrong again)</p>
+			<p class="listEntry">🟥🟨⬛⬛⬛⬛ - Three clues, two guesses (sacrificed a guess for a clue</p>
+			<p class="listEntry">🟥🟨🟥⬛⬛⬛ - Four clues, three guesses (another mistake)</p>
+			<p class="listEntry">🟥🟨🟥🟩⬛⬛ - Five clues, four guesses (we have a winner!)</p>
+
+			<p class="body">&nbsp</p>
+			<p class="body">
+				There you go. Good luck, and super sleuthing! The LinkedIn post and clues are below.
+			</p>
+
+			<p class="body">I am thinking of someone who reacted to this post:
+				<a href="https://www.linkedin.com/posts/hanesbrands-inc-_shout-out-to-charlotte-hornets-cody-zeller-activity-6790242678496874496-aOeH/?utm_source=linkedin_share&utm_medium=member_desktop_web" target="_blank">"Shout out to Charlotte Hornets' Cody Zeller!"<span>(Hanesbrand Inc. on LinkedIn)</span></a></p>
+			<p class="listEntry" id="clue1">Clue 1 - I am thinking of someone whose longest tenure at a company was 14 years</p>
+			<p class="listEntry" id="clue2"></p>
+			<p class="listEntry" id="clue3"></p>
+			<p class="listEntry" id="clue4"></p>
+			<p class="listEntry" id="clue5"></p>
+			<p class="listEntry" id="clue6"></p>
+
+			<p class="body"><input type="text" id="linkedinGuess" class="standardInput" placeholder="- LinkedIn Guess Who-ordle Guess -"></p>
+			<p class="body">
+				<button class="standardButton" onclick="useGuess()">Use Guess</button>
+				<button class="standardButton" onclick="loseGuess()">Get Clue</button>
+			</p>
+			<p class="body" id="result"></p>
+			<p class="listEntry"><span id="clueCount">1</span> clue</p>
+			<p class="listEntry"><span id="guessCount">0</span> guesses</p>
+			<p class="listEntry"><span id="skipCount">0</span> guesses skipped</p>
+			<p class="body">&nbsp</p>
+			<p class="body" id="summary">LinkedIn Guess Who-ordle #1 - 04/22/2022<br>
+				<span id="summ0"></span>
+				<span id="summ1"></span><br>
+				<span id="summ2"></span><br>
+				<span id="summ3"></span><br>
+				<span id="summ4"></span><br>
+				<span id="summ5"></span><br>
+				<span id="summ6"></span><br>
+			</p>
+		</div>		
+	</div>
+
+</body>
+
+</html>
