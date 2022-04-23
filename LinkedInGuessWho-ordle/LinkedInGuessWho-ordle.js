@@ -17,7 +17,7 @@ function useGuess()
 	var summText = "";
 	summText = Array.from(document.getElementById("summ"+(clueCount-1)).innerHTML).slice(0, guessCount+skipCount).join("");
 
-	if (input=="Olivier Motteau") {
+	if (input=="Kirsi Halttu") {
 		resultText = "That's correct! Good job!";
 		summText += "🟩";
 		showClues();
@@ -86,12 +86,13 @@ function getClue()
 	var clueCount = parseInt(clueCounter.innerHTML);
 
 	var clues = [
-		"Clue 1 - I am thinking of someone whose longest tenure at a company was 14 years",
-		"Clue 2 - I am thinking of someone who has been in their current position for < half a year",
-		"Clue 3 - I am thinking of someone who is in a management position",
-		"Clue 4 - I am thinking of someone who is in Europe",
-		"Clue 5 - I am thinking of someone who works in the footwear industry",
-		"Clue 6 - I am thinking of someone who is wearing glasses"
+		"Clue 1 - I am thinking of someone who specializes in design research and problem identification",
+		"Clue 2 - I am thinking of someone who only attended a singular university for their full education",
+		"Clue 3 - I am thinking of someone who has more than 3 published papers",
+		"Clue 4 - I am thinking of someone who currently works as a freelancer",
+		"Clue 5 - I am thinking of someone who is bilingual",
+		"Clue 6 - I am thinking of someone who lives near the gulf of Bothnia"
+
 	];
 
 	document.getElementById("clue"+(clueCount+1)).innerHTML = clues[clueCount];
