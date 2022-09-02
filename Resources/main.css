@@ -85,6 +85,10 @@ button:hover.standardButton.standardButton {
 		background-size: 100vw;
 	}
 
+	div {
+		scroll-margin-top:  7vw;
+	}
+
 	div.sidebar {
 		display: inline-block;
 		position: fixed;
@@ -201,6 +205,12 @@ button:hover.standardButton.standardButton {
 		top: 0;
 		width: 100%;
 	}
+
+	video.marioWorld {
+		width: 45%;
+		border: 3px solid #001149;
+		display: inline-block;
+	}
 }
 
 /* skinny */
@@ -208,6 +218,10 @@ button:hover.standardButton.standardButton {
 	body {
 		padding-top: 10vh;
 		background-size: auto 100vh;
+	}
+
+	div{
+		scroll-margin-top:  12vh;
 	}
 
 	div.sidebar {
@@ -317,6 +331,11 @@ button:hover.standardButton.standardButton {
 		position: absolute;
 		top: 0;
 		width: 100%;
+	}
+
+	video.marioWorld {
+		width: 100%;
+		border: 3px solid #001149;
 	}
 
 }
