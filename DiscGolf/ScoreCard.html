@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title> qbear.org - Score Card Maker</title>
+	<link rel="icon" href="../Resources/icon.png" />
+	<link rel="stylesheet" type="text/css" href="../Resources/main.css">
+	<script src="../Resources/script.js"></script>
+</head>
+
+<body style="background-image: url('../Resources/background.png')", onload="featuredPage();">	
+	
+	<div class="sidebar">
+		<p><a href="https://qbear.org"><img class="sidebar" src="../Resources/home.png"></a></p>
+		<p><a href="../Info"><img class="sidebar" src="../Resources/info.png"></a></p>
+		<p><a href="../What'sNew"><img class="sidebar" src="../Resources/new.png"></a></p>
+		<p><a href="../WebPageList"><img class="sidebar" src="../Resources/list.png"></a></p>
+		<p><a href="../Visitor'sLog"><img class="sidebar" src="../Resources/visitor.png"></a></p>
+		<p><a onclick="randomPage()" href="javascript:void(0);"><img class="sidebar" src="../Resources/random.png"></a></p> <!-- Random (on click) -->
+	</div>
+	<div class="page">
+		<div class="section">
+		<p class="header">Score Card Maker</p>
+		<p class="body">
+			Playing a round of disc golf? Don't have a sheet of paper and think your phone's notes app is lame? This page is a fully flexible score card maker. You can add columns for each player and rows for each hole at will. The score card will also keep track of player's total scores and when you finish the round, you can generate sweet images for you scorecard and round summary (landscape and portrait orientation WOW).
+		</p>
+		<p class="body">
+			Want to hear some secret features? . . . Come in close . . . If you name the first column of the score card PAR, you can also track player's realtive +/- to that column of the score card. Another secret feature? . . . Oh yeah! See that "Email to Qbear" at the bottom of the score card? You can send in your results to me! That's all the secret features for now, but I think it could be fun to work hard and build in a course map viewer. If you think that would be cool, <a href="mailto: qbear@qbear.org?subject=qbear.org&body=qbear.org is awesome! Anyways, I'm emailing because I think a course map viewer would be cool" target="_blank">send me an email</a>!
+		</p>
+		</div>
+
+		<div class="section">
+			<p class="subheader">Score Card</p>
+			<p class="body">Don't refresh! You'll lose your scores!!!</p>
+			<p class="body">
+				<input type="text" id="roundCourse" class="standardInput" placeholder="- Course Name -">
+				<input type="date" id="roundDate" class="standardInput">
+			</p>
+			<span id="playerCount" style="display: none;">1</span>
+			<span id="holeCount" style="display: none;">1</span>
+			<table class="scorecard">
+				<tbody id="scorecardTable">
+					<tr id="scHeader">
+						<td class="feature" style="width:10%; text-align:center;"></td>
+						<td class="feature" style="width:90%"><button class="scorecardButton standardButton" onclick="addPlayer()">Add New Player</button></td>
+					</tr>
+					<tr id="scPlayerRow">
+						<td class="feature" style="width:10%; text-align:center;"><img class="mascot" src="../Resources/icon.png"></td>
+						<td class="feature" style="width:90%"><input type="text" id="roundPlayer1" class="scorecardInput standardInput" placeholder="- Player 1 -"></td>
+					</tr>
+					<tr id="scRow1">
+						<td class="feature" style="width:10%; text-align:center;">1</td>
+						<td class="feature" style="width:90%"><input type="number" id="roundP1S1" class="scorecardInput standardInput" placeholder="- Score -"></td>
+					</tr>
+				</tbody>
+			</table>
+			<table class="scorecard">
+				<tr id="scTotalRow">
+					<td class="feature" style="width:10%; text-align:center;">Total</td>
+					<td class="feature" style="width:90%" id="totalP1"></td>
+				</tr>
+			</table>
+			<p class="body" id="testerrr"></p>
+			<p class="body"><button class="standardButton" onclick="updateScores()">Update Scores</button><button class="standardButton" onclick="addHole()">Add New Hole</button></p>
+		</div>
+
+	</div>
+
+</body>
+
+</html>

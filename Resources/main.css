@@ -149,6 +149,13 @@ input, select {
 		width: 45%;
 	}
 
+	table.scorecard {
+		display: inline-table;
+		vertical-align: top;
+		margin-left: 2.23958%;
+		width: 75%;
+	}
+
 	div.plotlyDiv {
 		min-width: 700px;
 		min-height:  350px;
@@ -159,21 +166,18 @@ input, select {
 
 	button.standardButton {
 		height: 34px;
-		width: 12%;
+		width: 20%;
 		text-align: center;
 		font-family: inherit;
 		font-size: 20px;
 		border: 1px solid #001149;
 	}
 	button:focus.standardButton {
-		height: 34px;
-		width: 12%;
-		text-align: center;
-		font-family: inherit;
-		font-size: 20px;
 		outline:  none;
 		background-color: #cad7bb;
-		border: 1px solid #001149;
+	}
+	button.scorecardButton {
+		width: 100%;
 	}
 
 	input.standardInput {
@@ -184,15 +188,12 @@ input, select {
 		padding-left: 10px;
 		border: 1px solid #001149;
 	}
-
 	input:focus.standardInput {
-		width: 25%;
-		height: 30px;
-		font-family: inherit;
-		font-size: 20px;
-		padding-left: 10px;
 		border: 1px solid #001149;
 		outline:  none;
+	}
+	input.scorecardInput {
+		width: 100%;
 	}
 
 	select.standardSelect {
@@ -205,12 +206,6 @@ input, select {
 	}
 
 	select:focus.standardSelect {
-		width: 25%;
-		height: 30px;
-		font-family: inherit;
-		font-size: 20px;
-		padding-left: 5px;
-		border: 1px solid #001149;
 		outline:  none;
 	}
 
@@ -286,6 +281,10 @@ input, select {
 		width: 100%;
 	}
 
+	table.scorecard {
+		width: 100%;
+	}
+
 	td.feature {
 		height: 3vh;
 	}
@@ -312,14 +311,16 @@ input, select {
 		border: 1px solid #001149;
 	}
 	button:focus.standardButton {
-		height: 34px;
-		width: 40%;
-		text-align: center;
-		font-family: inherit;
-		font-size: 20px;
 		outline:  none;
 		background-color: #cad7bb;
 		border: 1px solid #001149;
+	}
+
+	button.scorecardButton {
+		width: 100%;border: 1px solid #001149;
+	}
+	button:focus.scorecardButton {
+		width: 100%;
 	}
 
 	input.standardInput {
@@ -330,14 +331,7 @@ input, select {
 		padding-left: 10px;
 		border: 1px solid #001149;
 	}
-
 	input:focus.standardInput {
-		width: 100%;
-		height: 30px;
-		font-family: inherit;
-		font-size: 20px;
-		padding-left: 10px;
-		border: 1px solid #001149;
 		outline:  none;
 	}
 
@@ -349,14 +343,7 @@ input, select {
 		padding-left: 5px;
 		border: 1px solid #001149;
 	}
-
 	select:focus.standardSelect {
-		width: 100%;
-		height: 30px;
-		font-family: inherit;
-		font-size: 20px;
-		padding-left: 5px;
-		border: 1px solid #001149;
 		outline:  none;
 	}
 
