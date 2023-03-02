@@ -135,6 +135,14 @@ function getSwag()
 		wickedScore = (wickedScore + 1)/2;
 		groovyScore = (groovyScore + 1)/2;
 		swag = (swag + 1)/2; }
+	if (processed.includes("SYD27")) {
+		coolScore = (coolScore + 1.15)/2;
+		radScore = (radScore + 1.15)/2;
+		wickedScore = (wickedScore + 1.15)/2;
+		groovyScore = (groovyScore + 1)/2;
+		swagArr = [ coolScore, radScore, wickedScore, groovyScore ];
+		swagArr.sort( function (a, b) { return a - b; } )
+		swag = 0*swagArr[0] + 0.25*swagArr[1] + 0.25*swagArr[2] + 0.5*swagArr[3] }
 	if (processed.includes("JOELEMBIID")) {
 		coolScore = 0;
 		radScore = 0;
@@ -182,6 +190,10 @@ function getSwag()
 	if (processed.includes("CODYZELLER")) {
 		levelCat = "<span style='color: green; font-weight: bold''>Big Handsome</span>";
 		swagColor = "<span style='color: green; font-weight: bold''>" + swag + "</span>";
+	}
+	if (processed.includes("SYD27")) {
+		levelCat = "<span style='color: green; font-weight: bold''>Gummy Elephant</span>";
+		swagColor = "<span style='color: green; font-weight: bold''>🍬🐘</span>";
 	}
 
 	swagLevel.innerHTML = "" + input + " has a composite swag score of " + swagColor + ". That is a " + levelCat + " level of swag.";
