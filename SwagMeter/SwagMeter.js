@@ -194,6 +194,7 @@ function getSwag()
 	if (processed.includes("SYD27")) {
 		levelCat = "<span style='color: green; font-weight: bold''>Gummy Elephant</span>";
 		swagColor = "<span style='color: green; font-weight: bold''>🍬🐘</span>";
+		swag = "🍬🐘"
 	}
 
 	swagLevel.innerHTML = "" + input + " has a composite swag score of " + swagColor + ". That is a " + levelCat + " level of swag.";
