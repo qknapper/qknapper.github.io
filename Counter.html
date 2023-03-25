@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title> qbear.org - Swag Meter</title>
+	<link rel="icon" href="Resources/icon.png" />
+	<link rel="stylesheet" type="text/css" href="Resources/main.css">
+	<script src="Resources/script.js"></script>
+	<script src="Counter/Counter.js"></script>
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body style="background-image: url('Resources/background.png')", onload="featuredPage();">	
+	
+	<div class="sidebar">
+		<p><a href="https://qbear.org"><img class="sidebar" src="Resources/home.png"></a></p>
+		<p><a href="Info"><img class="sidebar" src="Resources/info.png"></a></p>
+		<p><a href="What'sNew"><img class="sidebar" src="Resources/new.png"></a></p>
+		<p><a href="WebPageList"><img class="sidebar" src="Resources/list.png"></a></p>
+		<p><a href="Visitor'sLog"><img class="sidebar" src="Resources/visitor.png"></a></p>
+		<p><a onclick="randomPage()" href="javascript:void(0);"><img class="sidebar" src="Resources/random.png"></a></p> <!-- Random (on click) -->
+	</div>
+	<div class="page">
+		<p class="header">Counter</p>
+		<div class="section">
+			<p class="body" id="counter">
+				0
+			</p>
+
+			<p class="body">
+				<button onclick="updateCounter(1)">+1</button>
+				<button onclick="updateCounter(5)">+5</button>
+				<button onclick="updateCounter(10)">+10</button>
+				<button onclick="updateCounter(50)">+50</button>
+				<button onclick="updateCounter(100)">+100</button>
+				<button onclick="updateCounter(500)">+500</button>
+				<button onclick="updateCounter(1000)">+1000</button>
+			</p>
+			<p class="body">
+				<input type="text" name="custom" id="customCount">
+				<button onclick="updateCounter('custom')">+Custom</button>
+			</p>
+			<p class="body">
+				<input type="text" name="set" id="setCount">
+				<button onclick="setCounter()">Set Counter</button>
+			</p>
+
+		</div>
+
+	</div>
+
+</body>
+
+</html>
