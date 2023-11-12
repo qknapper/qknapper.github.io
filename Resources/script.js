@@ -10,7 +10,7 @@ function featuredPage()
 
 function randomPage()
 {
-	var pages = ["PlayingCards", "SwagMeter", "Visitor'sLog"];
+	var pages = ["PlayingCards", "SwagMeter", "Visitor'sLog", "RandomAlphanumeric"];
 	var random = Math.floor(Math.random() * pages.length);
 	window.location.href = pages[random];
 }
@@ -18,6 +18,17 @@ function randomPage()
 function scroller(scrollID)
 {
 	document.getElementById(scrollID).scrollIntoView({behavior: "smooth", block: "start"});
+}
+
+function generateAlphaX()
+{
+	var output = "";
+	var length = document.getElementById("alphaXlength").value;
+	for (var i = 0; i < length; i++)
+	{output = output + Math.random().toString(36).slice(2, 3)}
+	output = output.toUpperCase();
+	navigator.clipboard.writeText(output);
+	document.getElementById("outputAlphaX").innerHTML = "<b>" + output + "</b> - Copied to clipboard!";
 }
 
 function zoomZone()

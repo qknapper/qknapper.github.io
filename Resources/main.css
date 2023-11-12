@@ -331,6 +331,7 @@ input, select {
 		padding-left: 10px;
 		border: 1px solid #001149;
 	}
+	
 	input:focus.standardInput {
 		outline:  none;
 	}
