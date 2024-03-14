@@ -145,8 +145,19 @@ input, select {
 	table.visitorsLog {
 		display: inline-table;
 		vertical-align: top;
-		margin-left: 2.23958%;
-		width: 45%;
+		width: 90%;
+	}
+	td.mascotBox {
+		width: 7em;
+		padding: 0.5em;
+		border: 3px solid #001149;
+	}
+	td.visitorInfo {
+		padding-left: 2.23958%;
+		border-bottom: 3px solid #001149;
+	}
+	img.tableMascot {
+		width:  100%;
 	}
 
 	table.scorecard {
@@ -287,6 +298,24 @@ input, select {
 
 	td.feature {
 		height: 3vh;
+	}
+
+	table.visitorsLog {
+		display: inline-table;
+		vertical-align: top;
+		width: 100%;
+	}
+	td.mascotBox {
+		width: 7em;
+		padding: 0.5em;
+		border: 3px solid #001149;
+	}
+	td.visitorInfo {
+		padding-left: 2.23958%;
+		border-bottom: 3px solid #001149;
+	}
+	img.tableMascot {
+		width:  100%;
 	}
 
 	img.iframe-placeholder {
