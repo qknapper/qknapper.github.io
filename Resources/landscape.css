@@ -1,0 +1,42 @@
+/* landscape */
+@media (min-aspect-ratio: 1920/1080) {
+	/* Page Layout */
+	body {
+		padding-top: 7.5vw;
+		background-size: 100vw;
+		overflow-y: hidden;
+	}
+	table.pagelayout {
+		width: 100%;
+		table-layout: fixed;
+	}
+	td.pagesection {
+		vertical-align: top;
+		word-wrap: break-word;
+	}
+	td.sidebar {
+		padding-left: 2.65625vw;
+		width: 2.22395vw;
+		padding-right: 2.65625vw;
+	}
+	td.page { width: 92.46355vw; }
+	div.pagewrapper {
+		height: calc(100vh - 7.5vw - 2.65628vw);
+		overflow-y: auto;
+		padding-right: 2.65625vw;
+	}
+
+	/* Global Styles */
+
+	input.longInput, select.longSelect, button.longButton {
+		width:  75%;
+		height: 1.5em;
+	}
+	input.shortInput, select.shortSelect, button.shortButton {
+		width:  25%;
+		height: 1.5em;
+	}
+
+	/* Visitor's Log */
+	td.visitorInfo { padding-left: 2ch; }
+}

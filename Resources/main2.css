@@ -1,0 +1,36 @@
+body {
+	 background-repeat: no-repeat;
+	 background-attachment: fixed;
+	 background-position: fixed;
+	 background-color: #899c91;
+
+}
+
+/* fat */
+@media (min-aspect-ratio: 1920/1080) {
+	body {
+		padding-top: 7.5vw;
+		background-size: 100vw;
+		overflow: hidden;
+	}
+
+	td.sidebar {	
+		width: 10vw;
+	}
+
+	td.page {
+		width: 90vw;
+	}
+
+	img.sidebarIcon {
+		width: 100%;
+	}
+}
+
+/* skinny */
+@media (max-aspect-ratio: 1920/1080) {
+	body {
+		padding-top: 10vh;
+		background-size: auto 100vh;
+	}
+}

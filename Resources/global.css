@@ -1,0 +1,91 @@
+/* Units
+	cm	 - centimeters
+	mm	 - millimeters
+	in	 - inches (1in = 96px = 2.54cm)
+	px	 - pixels (1px = 1/96th of 1in)
+	pt	 - points (1pt = 1/72 of 1in)
+	pc	 - picas (1pc = 12 pt) 
+
+	em	 - Relative to the font-size of the element (2em means 2 times the size of the current font) 	
+	ex	 - Relative to the x-height of the current font (rarely used) 	
+	ch	 - Relative to the width of the "0" (zero) 	
+	rem	 - Relative to font-size of the root element 	
+	vw	 - Relative to 1% of the width of the viewport* 	
+	vh	 - Relative to 1% of the height of the viewport* 	
+	vmin - Relative to 1% of viewport's* smaller dimension 	
+	vmax - Relative to 1% of viewport's* larger dimension 	
+	%	 - Relative to the parent element
+W3 Schools */
+
+body {
+	 background-repeat: no-repeat;
+	 background-attachment: fixed;
+	 background-position: fixed;
+	 background-color: #899c91;
+
+}
+
+div.section { padding-bottom: 20px; }
+
+p { margin-bottom: 0.75em; }
+p.header {
+	font-size: 22pt;
+	font-weight: bold;
+}
+p.subheader {
+	font-size: 18pt;
+	font-weight: bold;
+}
+p.body { font-size: 14pt; }
+
+a { display: inline-block; }
+a:hover { display: inline-block; }
+a:link { color: #001149; }
+a:visited { color: #092f18; }
+a span {display: none;}
+a:hover span {
+	display: inline-block;
+	text-decoration: underline;
+}
+
+img.sidebarIcon { width: 100%; }
+img.mascot {
+		height:  1.5em;
+		vertical-align:	middle
+}
+
+input, select, button {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: inherit;
+	font-size: 1em;
+	border: 1px solid #001149;
+}
+input, select { padding-left: 2ch; }
+input:focus, select:focus { outline:  none; }
+button:hover { background-color: #c0cfff; }
+button {
+	text-align: center;
+	transition-duration: 0.25s;
+}
+
+/* Visitor's Log */
+table.visitorsLog {
+	vertical-align: top;
+	width: 100%;
+}
+td.mascotBox {
+	vertical-align: middle;
+	width: 6em;
+	padding: 0.5em;
+	background-color: #B8BFD7;
+	border: 3px solid #001149;
+}
+td.visitorInfo {
+	vertical-align: bottom;
+	border-bottom: 3px solid #001149;
+}
+img.tableMascot {
+	width:  100%;
+}

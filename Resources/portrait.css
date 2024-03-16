@@ -1,0 +1,41 @@
+/* portrait */
+@media (max-aspect-ratio: 1920/1080) {
+	body {
+		padding-top: 13.33333vh;
+		background-size: auto 100vh;
+		overflow-y: hidden;
+	}
+	table.pagelayout {
+		width: 100%;
+		table-layout: fixed;
+	}
+	td.pagesection {
+		vertical-align: top;
+		word-wrap: break-word;
+	}
+	td.sidebar {
+		padding-left: 4.72222vh;
+		width: 3.95368vh;
+		padding-right: 4.72222vh;
+	}
+	td.page { width: 100vw - 9.44444vh - 3.95368vh; }
+	div.pagewrapper {
+		height: calc(100vh - 13.33333vh - 4.72222vh);
+		overflow-y: auto;
+		padding-right: 4.72222vh;
+	}
+
+	/* Global Styles */
+
+	input.longInput, select.longSelect, button.longButton {
+		width:  90%;
+		height: 1.5em;
+	}
+	input.shortInput, select.shortSelect, button.shortButton {
+		width:  33%;
+		height: 1.5em;
+	}
+
+	/* Visitor's Log */
+	td.visitorInfo { padding-left: 2ch; }
+}
