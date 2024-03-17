@@ -4,45 +4,53 @@
 
 <head>
 	<title> qbear.org - Info</title>
-	<link rel="icon" href="Resources/icon.png" />
-	<link rel="stylesheet" type="text/css" href="Resources/main.css">
+	<link rel="icon" href="Resources/icon.png">
+	<link rel="stylesheet" type="text/css" href="Resources/resets.css">
+	<link rel="stylesheet" type="text/css" href="Resources/global.css">
+	<link rel="stylesheet" media="(min-aspect-ratio: 1920/1080)" type="text/css" href="Resources/landscape.css">
+	<link rel="stylesheet" media="(max-aspect-ratio: 1920/1080)" type="text/css" href="Resources/portrait.css">
 	<script src="Resources/script.js"></script>
 </head>
 
-<body style="background-image: url('Resources/background.png')", onload="featuredPage();">	
-	
-	<div class="sidebar">
-		<p><a href="https://qbear.org"><img class="sidebar" src="Resources/home.png"></a></p>
-		<p><a href="Info"><img class="sidebar" src="Resources/info.png"></a></p>
-		<p><a href="What'sNew"><img class="sidebar" src="Resources/new.png"></a></p>
-		<p><a href="WebPageList"><img class="sidebar" src="Resources/list.png"></a></p>
-		<p><a href="Visitor'sLog"><img class="sidebar" src="Resources/visitor.png"></a></p>
-		<p><a onclick="randomPage()" href="javascript:void(0);"><img class="sidebar" src="Resources/random.png"></a></p> <!-- Random (on click) -->
-	</div>
-	<div class="page">
-		<p class="header">Info</p>
-		<div class="section">
-			<p class="body">
-				Hi I'm Quinn. My teddy bear is Quinn Bear, but it is pretty much a shared identity.
-			</p>
+<body style="background-image: url('Resources/background.png')", onload="featuredPage();">
 
-			<p class="body">
-				This is my website, I'm sure you'll find something you can enjoy. Content is pretty sparce for now, but I'm working on it. If there is anything awesome you'd like to see, I am open to suggestions! You should be able to find some of the following here soon:
-			</p>
-				<p class="listEntry">- A doorbell?!?! 👀</p>
-				<p class="listEntry">- Disc golf courses I've played and my scores</p>
-				<p class="listEntry">- Other activities and summaries (maybe running or basketball)</p>
-		</div>	
+	<table class=pagelayout>
+		<tr>
+			<td class="pagesection sidebar">
+				<p><a href="https://qbear.org"><img class="sidebarIcon" src="Resources/home.png"></a></p>
+				<p><a href="Info"><img class="sidebarIcon" src="Resources/info.png"></a></p>
+				<p><a href="What'sNew"><img class="sidebarIcon" src="Resources/new.png"></a></p>
+				<p><a href="WebPageList"><img class="sidebarIcon" src="Resources/list.png"></a></p>
+				<p><a href="Visitor'sLog"><img class="sidebarIcon" src="Resources/visitor.png"></a></p>
+				<p><a onclick="randomPage()" href="javascript:void(0);"><img class="sidebarIcon" src="Resources/random.png"></a></p> <!-- Random (on click) -->
+			</td>
+			<td class="pagesection page">
+			<div class="pagewrapper">
+				<p class="header">Info</p>
+				<div class="section">
+					<p class="body">
+						Hi I'm Quinn. My teddy bear is Quinn Bear, but it is pretty much a shared identity.
+					</p>
 
-		<div class="section">
-			<p class="body">If you have questions or something you'd like to see, send me an email at <a href="mailto: qbear@qbear.org?subject=qbear.org&body=qbear.org is awesome! Anyways, I'm emailing because [insert why you're emailing me]" target="_blank">qbear@qbear.org</a> : Put "<a href="https://qbear.org">qbear.org</a>" in the subject line, thanks :) </p>
-			<p class="body">
-				That should be about it. Maybe this tab was informative, maybe it wasn't. I hope you enjoy hanging out on the website - Quinn
-			</p>
-		</div>
+					<p class="body">
+						This is my website, I'm sure you'll find something you can enjoy. Content is pretty sparce for now, but I'm working on it. If there is anything awesome you'd like to see, I am open to suggestions! You should be able to find some of the following here soon:
+					</p>
+						<p class="listEntry">- A doorbell?!?! 👀</p>
+						<p class="listEntry">- Disc golf courses I've played and my scores</p>
+						<p class="listEntry">- Other cool things</p>
+				</div>	
 
-	</div>
-
+				<div class="section">
+					<p class="body">If you have questions or something you'd like to see, send me an email at <a href="mailto: qbear@qbear.org?subject=qbear.org&body=qbear.org is awesome! Anyways, I'm emailing because [insert why you're emailing me]" target="_blank">qbear@qbear.org</a> : Put "<a href="https://qbear.org">qbear.org</a>" in the subject line, thanks :) </p>
+					<p class="body">
+						That should be about it. Maybe this tab was informative, maybe it wasn't. I hope you enjoy hanging out on the website - Quinn
+					</p>
+				</div>
+			</div> <!-- page wrapper close -->
+			</td>
+		</tr>
+	</table>	
 </body>
+</html>
 
 </html>

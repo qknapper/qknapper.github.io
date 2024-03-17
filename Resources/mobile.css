@@ -5,6 +5,9 @@ body {
 	background-size: auto 100vh;
 	overflow-y: hidden;
 }
+div.mobile {display: inline;}
+div.notMobile {display: none;}
+
 table.pagelayout {
 	width: 100%;
 	table-layout: fixed;
@@ -21,10 +24,22 @@ td.sidebar {
 td.page { width: 100vw - 9.44444vh - 3.95368vh; }
 div.pagewrapper {
 	height: calc(100vh - 13.33333vh - 4.72222vh);
+	overflow-y: auto;
+	overflow-x: hidden;
 	padding-right: 4.72222vh;
 }
 
 /* Global Styles */
+
+p.header {
+	font-size: 18pt;
+	font-weight: bold;
+}
+p.subheader {
+	font-size: 14pt;
+	font-weight: bold;
+}
+p.body { font-size: 14pt; }
 
 input.longInput, select.longSelect, button.longButton {
 	width:  90%;
@@ -35,22 +50,25 @@ input.shortInput, select.shortSelect, button.shortButton {
 	height: 1.5em;
 }
 
-img.wideImage {
-	width: 90%;
-}
-
-video.wideVideo {
-	width: 90%;
-}
-video.narrowVideo {
-	width: 70%;
-}
-
 /* Visitor's Log */
-td.visitorInfo { padding-left: 2ch; }
+td.mascotBox {
+	vertical-align: middle;
+	width: 2em;
+	padding: 0.25em;
+	background-color: #B8BFD7;
+	border: 3px solid #001149;
+}
+td.visitorInfo {
+	vertical-align: middle;
+	border-bottom: 0px;
+	padding-left: 2ch;
+	p {
+		margin-bottom: 0px;
+	}
+}
+p.visitorsMessage {
+	vertical-align: bottom;
 
-/* Swag Meter */
-div.plotlyDiv {
-	width: 80vw;
-	height: 40vw;
+	padding-bottom: 1ch;
+	border-bottom: 3px solid #001149;
 }

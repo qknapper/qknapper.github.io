@@ -4,142 +4,147 @@
 
 <head>
 	<title> qbear.org - A1 Mario World</title>
-	<link rel="icon" href="Resources/icon.png" />
-	<link rel="stylesheet" type="text/css" href="Resources/main.css">
+	<link rel="icon" href="Resources/icon.png">
+	<link rel="stylesheet" type="text/css" href="Resources/resets.css">
+	<link rel="stylesheet" type="text/css" href="Resources/global.css">
+	<link rel="stylesheet" media="(min-aspect-ratio: 1920/1080)" type="text/css" href="Resources/landscape.css">
+	<link rel="stylesheet" media="(max-aspect-ratio: 1920/1080)" type="text/css" href="Resources/portrait.css">
 	<script src="Resources/script.js"></script>
 </head>
 
-<body style="background-image: url('Resources/background.png')">	
-	
-	<div class="sidebar">
-		<p><a href="https://qbear.org"><img class="sidebar" src="Resources/home.png"></a></p>
-		<p><a href="Info"><img class="sidebar" src="Resources/info.png"></a></p>
-		<p><a href="What'sNew"><img class="sidebar" src="Resources/new.png"></a></p>
-		<p><a href="WebPageList"><img class="sidebar" src="Resources/list.png"></a></p>
-		<p><a href="A1MarioWorld"><img class="sidebar" src="Resources/a1.png"></a></p>
-		<p><a href="Visitor'sLog"><img class="sidebar" src="Resources/visitor.png"></a></p>
-		<p><a onclick="randomPage()" href="javascript:void(0);"><img class="sidebar" src="Resources/random.png"></a></p> <!-- Random (on click) -->
-	</div>
-	<div class="page">
-		<p class="header">A1 Mario World</p>
-		<div class="section">
-			<p class="body">
-				A1 Mario World is a Super Mario World romhack that transforms the original SNES classic into a short and refreshing new adventure. While there are plenty of hacks out there that are longer, more polished, harder, and even more enjoyable - A1 Mario World is a unique window into my perspective on the game. Dedicated to the <a href="https://www.twitch.tv/a1_twins">A1 Twins <span>(twitch)</span></a>, this hack is my open letter of appreciation for their infectious excitement that has brough joy to me and many others. A long time ago I mixed and matched some ideas into <a href="A1MarioWorld/Super QBear World 1.1.ips">Super Qbear World <span>(download)</span></a>/<a href="https://www.youtube.com/watch?v=fU1H40ckqpg">trailer <span>(YouTube)</span></a>. Much more recently, I began refining my skills and putting together new ideas for a future SMW Romhack. A1 Mario World is the result, building on all of my learning experiences and shaping a compelling new platforming challenge.
-			</p>
-			<p class="body">Update: A1 Mario World is now on <a href="https://www.smwcentral.net/?p=section&a=details&id=32956">smwcentral.net<span>/?p=section&a=details&id=32956</span></a>! There were some issues with door entries in the castle level. I haven't (and likely won't for a while) fixed these in Version 1, only Version A. So play Version 1 at your own risk. It is still beatable, but do the blue section first in the castle, and enter doors in the castle from the right edge</p>
-			<p class="body">
-				Let's get started! On this page you can:
-			</p>
-				<p class="listEntry">- Download the A1 Mario World .bps patch: <a href="A1MarioWorld/A1 Mario World (Version A).bps">Version A <span>(download)</span></a> / <a href="A1MarioWorld/A1 Mario World (Version 1).bps">Version 1 <span>(*read update*, then download)</span></a></p>
-				<p class="listEntry">- See the <a href="javascript:scroller('Credits')">Credits <span>(scroll)</span></a> for all of the many amazing tools people made that I have used</p>
-				<p class="listEntry">- Visit the <a href="javascript:scroller('ZoomZone')">Zoom Zone <span>(scroll)</span></a> for everyone who has completed the special world (plus submission instructions)</p>
-			
-			<video class="marioWorld" poster="A1MarioWorld/Blank Thumbnail.png" controls>
-				<source src="A1MarioWorld/A1 Mario World Teaser.mov" type="video/mp4">
-			</video>
-		</div>
+<body style="background-image: url('Resources/background.png')", onload="featuredPage();">
 
-		<div class="section" id="Credits">
-			<p class="header">Credits</p>
-			<p class="subheader">General Tools</p>
-			<p class="listEntry"><b>SMW Central: </b> A very large and helpful forum containing many wonderful people. The discussion and code snippets here have been influential in my understanding of adding custom, external content to Super Mario World. Pretty much all of the tools and asm used was sourced from this forum - <a href="https://www.smwcentral.net/">smwcentral.net</a></p>
+	<table class=pagelayout>
+		<tr>
+			<td class="pagesection sidebar">
+				<p><a href="https://qbear.org"><img class="sidebarIcon" src="Resources/home.png"></a></p>
+				<p><a href="Info"><img class="sidebarIcon" src="Resources/info.png"></a></p>
+				<p><a href="What'sNew"><img class="sidebarIcon" src="Resources/new.png"></a></p>
+				<p><a href="WebPageList"><img class="sidebarIcon" src="Resources/list.png"></a></p>
+				<p><a href="Visitor'sLog"><img class="sidebarIcon" src="Resources/visitor.png"></a></p>
+				<p><a onclick="randomPage()" href="javascript:void(0);"><img class="sidebarIcon" src="Resources/random.png"></a></p> <!-- Random (on click) -->
+			</td>
+			<td class="pagesection page">
+			<div class="pagewrapper">
+				<p class="header">A1 Mario World</p>
+				<div class="section">
+					<p class="body">
+						A1 Mario World is a Super Mario World romhack that transforms the original SNES classic into a short and refreshing new adventure. While there are plenty of hacks out there that are longer, more polished, harder, and even more enjoyable - A1 Mario World is a unique window into my perspective on the game. Dedicated to the <a href="https://www.twitch.tv/a1_twins">A1 Twins <span>(twitch)</span></a>, this hack is my open letter of appreciation for their infectious excitement that has brough joy to me and many others. A long time ago I mixed and matched some ideas into <a href="A1MarioWorld/Super QBear World 1.1.ips">Super Qbear World <span>(download)</span></a>/<a href="https://www.youtube.com/watch?v=fU1H40ckqpg">trailer <span>(YouTube)</span></a>. Much more recently, I began refining my skills and putting together new ideas for a future SMW Romhack. A1 Mario World is the result, building on all of my learning experiences and shaping a compelling new platforming challenge.
+					</p>
+					<p class="body">Update: A1 Mario World is now on <a href="https://www.smwcentral.net/?p=section&a=details&id=32956">smwcentral.net<span>/?p=section&a=details&id=32956</span></a>! There were some issues with door entries in the castle level. I haven't (and likely won't for a while) fixed these in Version 1, only Version A. So play Version 1 at your own risk. It is still beatable, but do the blue section first in the castle, and enter doors in the castle from the right edge</p>
+					<p class="body">
+						Let's get started! On this page you can:
+					</p>
+						<p class="listEntry">- Download the A1 Mario World .bps patch: <a href="A1MarioWorld/A1 Mario World (Version A).bps">Version A <span>(download)</span></a> / <a href="A1MarioWorld/A1 Mario World (Version 1).bps">Version 1 <span>(*read update*, then download)</span></a></p>
+						<p class="listEntry">- See the <a href="javascript:scroller('Credits')">Credits <span>(scroll)</span></a> for all of the many amazing tools people made that I have used</p>
+						<p class="listEntry">- Visit the <a href="javascript:scroller('ZoomZone')">Zoom Zone <span>(scroll)</span></a> for everyone who has completed the special world (plus submission instructions)</p>
+					
+					<video class="narrowVideo content" poster="A1MarioWorld/Blank Thumbnail.png" controls>
+						<source src="A1MarioWorld/A1 Mario World Teaser.mov" type="video/mp4">
+					</video>
+				</div>
 
-			<p class="listEntry"><b>Lunar Magic: </b> The primary Super Mario World level design tool. Lunar Magic is an extremely versatile interface for organizing and adding blocks and sprites in levels and overworlds - <a href="https://www.smwcentral.net/?p=section&a=details&id=28429">smwcentral.net<span>/?p=section&a=details&id=28429</span></a></p>
+				<div class="section" id="Credits">
+					<p class="header">Credits</p>
+					<p class="subheader">General Tools</p>
+					<p class="listEntry"><b>SMW Central: </b> A very large and helpful forum containing many wonderful people. The discussion and code snippets here have been influential in my understanding of adding custom, external content to Super Mario World. Pretty much all of the tools and asm used was sourced from this forum - <a href="https://www.smwcentral.net/">smwcentral.net</a></p>
 
-			<p class="listEntry"><b>AddMusicK: </b> A tool for inserting custom music (ported as a text file) into Super Mario World - <a href="https://www.smwcentral.net/?p=section&a=details&id=24994">smwcentral.net<span>/?p=section&a=details&id=24994</span></a></p>
+					<p class="listEntry"><b>Lunar Magic: </b> The primary Super Mario World level design tool. Lunar Magic is an extremely versatile interface for organizing and adding blocks and sprites in levels and overworlds - <a href="https://www.smwcentral.net/?p=section&a=details&id=28429">smwcentral.net<span>/?p=section&a=details&id=28429</span></a></p>
 
-			<p class="listEntry"><b>Asar: </b> A tool for inserting custom asm code into Super Mario World that affects the entire game - <a href="https://www.smwcentral.net/?p=section&a=details&id=25953">smwcentral.net<span>/?p=section&a=details&id=25953</span></a></p>
+					<p class="listEntry"><b>AddMusicK: </b> A tool for inserting custom music (ported as a text file) into Super Mario World - <a href="https://www.smwcentral.net/?p=section&a=details&id=24994">smwcentral.net<span>/?p=section&a=details&id=24994</span></a></p>
 
-			<p class="listEntry"><b>Blockreator: </b> A tool for creating and customizing placeable blocks/objects - <a href="https://www.smwcentral.net/?p=section&a=details&id=20129">smwcentral.net<span>/?p=section&a=details&id=20129</span></a></p>
+					<p class="listEntry"><b>Asar: </b> A tool for inserting custom asm code into Super Mario World that affects the entire game - <a href="https://www.smwcentral.net/?p=section&a=details&id=25953">smwcentral.net<span>/?p=section&a=details&id=25953</span></a></p>
 
-			<p class="listEntry"><b>Gopher Popcorn Stew: </b> A tool for inserting custom blocks/objects - <a href="https://www.smwcentral.net/?p=section&a=details&id=29130">smwcentral.net<span>/?p=section&a=details&id=29130</span></a></p>
+					<p class="listEntry"><b>Blockreator: </b> A tool for creating and customizing placeable blocks/objects - <a href="https://www.smwcentral.net/?p=section&a=details&id=20129">smwcentral.net<span>/?p=section&a=details&id=20129</span></a></p>
 
-			<p class="listEntry"><b>Pixi: </b> A tool for inserting custom sprites - <a href="https://www.smwcentral.net/?p=section&a=details&id=26026">smwcentral.net<span>/?p=section&a=details&id=26026</span></a></p>
+					<p class="listEntry"><b>Gopher Popcorn Stew: </b> A tool for inserting custom blocks/objects - <a href="https://www.smwcentral.net/?p=section&a=details&id=29130">smwcentral.net<span>/?p=section&a=details&id=29130</span></a></p>
 
-			<p class="listEntry"><b>SPC Play: </b> A music porting tool that emulates the SNES music engine - <a href="https://www.smwcentral.net/?p=section&a=details&id=28962">smwcentral.net<span>/?p=section&a=details&id=28962</span></a></p>
+					<p class="listEntry"><b>Pixi: </b> A tool for inserting custom sprites - <a href="https://www.smwcentral.net/?p=section&a=details&id=26026">smwcentral.net<span>/?p=section&a=details&id=26026</span></a></p>
 
-			<p class="listEntry"><b>Uber ASM: </b> A tool for inserting custom asm code on a level to level basis - <a href="https://www.smwcentral.net/?p=section&a=details&id=19982">smwcentral.net<span>/?p=section&a=details&id=19982</span></a></p>
+					<p class="listEntry"><b>SPC Play: </b> A music porting tool that emulates the SNES music engine - <a href="https://www.smwcentral.net/?p=section&a=details&id=28962">smwcentral.net<span>/?p=section&a=details&id=28962</span></a></p>
 
-			<p class="listEntry"><b>YY-CHR: </b> A pixel based image editor that reads and writes native SNES graphic files - <a href="https://www.smwcentral.net/?p=section&a=details&id=27208">smwcentral.net<span>/?p=section&a=details&id=27208</span></a></p>
+					<p class="listEntry"><b>Uber ASM: </b> A tool for inserting custom asm code on a level to level basis - <a href="https://www.smwcentral.net/?p=section&a=details&id=19982">smwcentral.net<span>/?p=section&a=details&id=19982</span></a></p>
 
-
-			<p class="subheader">Hackwide ASM</p>
-			<p class="listEntry"><b>CircleFriendo: </b> Timer Sprite Status Bar - <a href="https://www.smwcentral.net/?p=section&a=details&id=28578">smwcentral.net<span>/?p=section&a=details&id=28578</span></a></p>
-
-			<p class="listEntry"><b>Kevin: </b> ON/OFF Double Hit Fix - <a href="https://www.smwcentral.net/?p=section&a=details&id=30011">smwcentral.net<span>/?p=section&a=details&id=30011</span></a></p>
-
-			<p class="listEntry"><b>Kevin, lx5, worldpeace: </b> Retry System (+ Multiple Checkpoints) - <a href="https://www.smwcentral.net/?p=section&a=details&id=26078">smwcentral.net<span>/?p=section&a=details&id=26078</span></a></p>
-
-			<p class="listEntry"><b>Nowieso: </b> Customizable Sprite Killer - <a href="https://www.smwcentral.net/?p=section&a=details&id=22898">smwcentral.net<span>/?p=section&a=details&id=22898</span></a></p>
+					<p class="listEntry"><b>YY-CHR: </b> A pixel based image editor that reads and writes native SNES graphic files - <a href="https://www.smwcentral.net/?p=section&a=details&id=27208">smwcentral.net<span>/?p=section&a=details&id=27208</span></a></p>
 
 
-			<p class="subheader">Level Specific ASM</p>
-			<p class="listEntry"><b>Ayami: </b> Layer 2 Background Auto-Scroll (Title Screen) - <a href="https://www.smwcentral.net/?p=section&a=details&id=23117">smwcentral.net<span>/?p=section&a=details&id=23117</span></a></p>
+					<p class="subheader">Hackwide ASM</p>
+					<p class="listEntry"><b>CircleFriendo: </b> Timer Sprite Status Bar - <a href="https://www.smwcentral.net/?p=section&a=details&id=28578">smwcentral.net<span>/?p=section&a=details&id=28578</span></a></p>
 
-			<p class="listEntry"><b>Eduard: </b> Invisible Mario (Credits) - <a href="https://www.smwcentral.net/?p=section&a=details&id=22636">smwcentral.net<span>/?p=section&a=details&id=22636</span></a></p>
+					<p class="listEntry"><b>Kevin: </b> ON/OFF Double Hit Fix - <a href="https://www.smwcentral.net/?p=section&a=details&id=30011">smwcentral.net<span>/?p=section&a=details&id=30011</span></a></p>
 
-			<p class="listEntry"><b>Hammer Brother: </b> Door if current or specific level beaten (Castle Level) - <a href="https://www.smwcentral.net/?p=section&a=details&id=13204">smwcentral.net<span>/?p=section&a=details&id=13204</span></a></p>
+					<p class="listEntry"><b>Kevin, lx5, worldpeace: </b> Retry System (+ Multiple Checkpoints) - <a href="https://www.smwcentral.net/?p=section&a=details&id=26078">smwcentral.net<span>/?p=section&a=details&id=26078</span></a></p>
 
-			<p class="listEntry"><b>janklorde: </b> Disable Controller Buttons (Credits) - <a href="https://www.smwcentral.net/?p=section&a=details&id=26397">smwcentral.net<span>/?p=section&a=details&id=26397</span></a></p>
-
-			<p class="listEntry"><b>Kevin: </b> Horizontal/Vertical Autoscroll (Castle Level, Credits) - <a href="https://www.smwcentral.net/?p=section&a=details&id=23357">smwcentral.net<span>/?p=section&a=details&id=23357</span></a></p>
-
-			<p class="listEntry"><b>Ladida: </b> Peach's Floating Ability (Floating Level) - <a href="https://www.smwcentral.net/?p=section&a=details&id=20818">smwcentral.net<span>/?p=section&a=details&id=20818</span></a></p>
-
-			<p class="listEntry"><b>mathie: </b> Multi-step Autoscroll (Ladder Level) - <a href="https://www.smwcentral.net/?p=section&a=details&id=16107">smwcentral.net<span>/?p=section&a=details&id=16107</span></a></p>
-
-			<p class="listEntry"><b>mikeyk: </b> Level Ender (Castle Level) - <a href="https://www.smwcentral.net/?p=section&a=details&id=20933">smwcentral.net<span>/?p=section&a=details&id=20933</span></a></p>
-
-			<p class="listEntry"><b>yoshicookiezeus: </b> Stationary Magikoopa (Castle Level) - <a href="https://www.smwcentral.net/?p=section&a=details&id=9479">smwcentral.net<span>/?p=section&a=details&id=9479</span></a></p>
+					<p class="listEntry"><b>Nowieso: </b> Customizable Sprite Killer - <a href="https://www.smwcentral.net/?p=section&a=details&id=22898">smwcentral.net<span>/?p=section&a=details&id=22898</span></a></p>
 
 
-			<p class="subheader">Music</p>
-			<p class="listEntry"><b>Moon Hooch: </b> A saxophone duo plus drummer. All the music in this game are covers of their stuff - <a href="https://www.moonhooch.com/">moonhooch.com</a></p>
-			<p class="listEntry"><b>Musescore: </b> A sheet music sharing website. Lots of talented transcribers shared there work here, I used these as starting points to port into SNES music - <a href="https://musescore.com/">musescore.com</a></p>
+					<p class="subheader">Level Specific ASM</p>
+					<p class="listEntry"><b>Ayami: </b> Layer 2 Background Auto-Scroll (Title Screen) - <a href="https://www.smwcentral.net/?p=section&a=details&id=23117">smwcentral.net<span>/?p=section&a=details&id=23117</span></a></p>
 
-			<p class="listEntry"><b>Bryantang: </b> Number 5 (On/Off, Timer Level) <a href="https://musescore.com/user/4430996/scores/7913414">
-				musescore.com<span>/user/4430996/scores/7913414</span></a>, Number 4 (Floating Level) <a href="https://musescore.com/user/4430996/scores/7913402">musescore.com<span>/user/4430996/scores/7913402</span></a></p>
+					<p class="listEntry"><b>Eduard: </b> Invisible Mario (Credits) - <a href="https://www.smwcentral.net/?p=section&a=details&id=22636">smwcentral.net<span>/?p=section&a=details&id=22636</span></a></p>
 
-			<p class="listEntry"><b>GrantisG: </b> Number 1 (Desert Level) <a href="https://musescore.com/user/1271611/scores/697196">musescore.com<span>/user/1271611/scores/697196</span></a>, Take the L Train (Rock Level) <a href="https://musescore.com/user/1271611/scores/1208586">musescore.com<span>/user/1271611/scores/1208586</span></a></p>
+					<p class="listEntry"><b>Hammer Brother: </b> Door if current or specific level beaten (Castle Level) - <a href="https://www.smwcentral.net/?p=section&a=details&id=13204">smwcentral.net<span>/?p=section&a=details&id=13204</span></a></p>
 
-			<p class="listEntry"><b>I Don't Play the Saxophone: </b> EWI (Castle Level) <a href="https://musescore.com/user/13060546/scores/5385199">musescore.com<span>/user/13060546/scores/5385199</span></a></p>
+					<p class="listEntry"><b>janklorde: </b> Disable Controller Buttons (Credits) - <a href="https://www.smwcentral.net/?p=section&a=details&id=26397">smwcentral.net<span>/?p=section&a=details&id=26397</span></a></p>
 
-			<p class="listEntry"><b>PatrickJohns1: </b> St Louis (Title Screen, Special World) <a href="https://musescore.com/user/4653431/scores/1739221">musescore.com<span>/user/4653431/scores/1739221</span></a></p>
+					<p class="listEntry"><b>Kevin: </b> Horizontal/Vertical Autoscroll (Castle Level, Credits) - <a href="https://www.smwcentral.net/?p=section&a=details&id=23357">smwcentral.net<span>/?p=section&a=details&id=23357</span></a></p>
 
-			<p class="listEntry"><b>A Trumpeter Can Play Sax: </b> Red Sky (Layer 2 Water Level) <a href="https://musescore.com/user/7351001/scores/3995741">musescore.com<span>/user/7351001/scores/3995741</span></a>, Bari 3 (Overworld) <a href="https://musescore.com/user/7351001/scores/2526876">musescore.com<span>/user/7351001/scores/2526876</span></a>, Jiggle (Ladder Level) <a href="https://musescore.com/user/7351001/scores/5388323">musescore.com<span>/user/7351001/scores/5388323</span></a></p>
+					<p class="listEntry"><b>Ladida: </b> Peach's Floating Ability (Floating Level) - <a href="https://www.smwcentral.net/?p=section&a=details&id=20818">smwcentral.net<span>/?p=section&a=details&id=20818</span></a></p>
+
+					<p class="listEntry"><b>mathie: </b> Multi-step Autoscroll (Ladder Level) - <a href="https://www.smwcentral.net/?p=section&a=details&id=16107">smwcentral.net<span>/?p=section&a=details&id=16107</span></a></p>
+
+					<p class="listEntry"><b>mikeyk: </b> Level Ender (Castle Level) - <a href="https://www.smwcentral.net/?p=section&a=details&id=20933">smwcentral.net<span>/?p=section&a=details&id=20933</span></a></p>
+
+					<p class="listEntry"><b>yoshicookiezeus: </b> Stationary Magikoopa (Castle Level) - <a href="https://www.smwcentral.net/?p=section&a=details&id=9479">smwcentral.net<span>/?p=section&a=details&id=9479</span></a></p>
 
 
-			<p class="subheader">Playtesters</p>
-			<p class="listEntry"><b>Inkydom: </b> A skilled and entertaning streamer who plays Mario and stuff. Watching him play helped me discover a very, very, very large amount of jank that flew under my radar. - <a href="https://www.twitch.tv/inkydom">twitch.tv<span>/inkydom</span></a></p>
-			<p class="listEntry"><b>Kreatz: </b> A friend from college who plays many platformers, just not Mario. Watching him play shaped my thoughts on pacing and accessiblity</p>
+					<p class="subheader">Music</p>
+					<p class="listEntry"><b>Moon Hooch: </b> A saxophone duo plus drummer. All the music in this game are covers of their stuff - <a href="https://www.moonhooch.com/">moonhooch.com</a></p>
+					<p class="listEntry"><b>Musescore: </b> A sheet music sharing website. Lots of talented transcribers shared there work here, I used these as starting points to port into SNES music - <a href="https://musescore.com/">musescore.com</a></p>
 
-		</div>
+					<p class="listEntry"><b>Bryantang: </b> Number 5 (On/Off, Timer Level) <a href="https://musescore.com/user/4430996/scores/7913414">
+						musescore.com<span>/user/4430996/scores/7913414</span></a>, Number 4 (Floating Level) <a href="https://musescore.com/user/4430996/scores/7913402">musescore.com<span>/user/4430996/scores/7913402</span></a></p>
 
-		<div class="section" id="ZoomZone">
-			<p class="header">Zoom Zone</p>
-			<p class="body">
-				Did you beat the game? Did you also beat Special World? That is pretty sweet, you're way better at Mario than I am. And for that, you deserve a spot on this page. Fill out the form below, send the email, and check back later to admire your beautiful space in the zoom zone! The button opens a pre-typed email in your default mail app.
-			</p>
-			<p class="listEntry"><input type="text" id="name" class="standardInput" placeholder="- Name -"> <br>
-			<input type="text" id="version" class="standardInput" placeholder="- Game Version -"> <br>
-			<input type="text" id="level" class="standardInput" placeholder="- Favorite Level -"> <br>
-			<input type="text" id="message" class="standardInput" placeholder="- Message -"> <br>
-			<input type="text" id="pword" class="standardInput" placeholder="- Password -"> </p>
-			<p class="listEntry"><button class="standardButton" onclick="zoomZone()">Generate Email!</button> </p>
+					<p class="listEntry"><b>GrantisG: </b> Number 1 (Desert Level) <a href="https://musescore.com/user/1271611/scores/697196">musescore.com<span>/user/1271611/scores/697196</span></a>, Take the L Train (Rock Level) <a href="https://musescore.com/user/1271611/scores/1208586">musescore.com<span>/user/1271611/scores/1208586</span></a></p>
 
-			<p class="subheader">Quinn Bear - </p>
-			<p class="listEntry"><i>Game Version: </i>Version A and Version 1 <br>
-								<i>Favorite Level: </i>Layer 2 Water Level</p>
-			<p class="listEntry">This is a preview of what being in the Zoom Zone looks like. I had fun making and playing A1 Mario World, hopefully you enjoy it too. </p>
+					<p class="listEntry"><b>I Don't Play the Saxophone: </b> EWI (Castle Level) <a href="https://musescore.com/user/13060546/scores/5385199">musescore.com<span>/user/13060546/scores/5385199</span></a></p>
 
-			<p class="subheader">Da - </p>
-			<p class="listEntry"><i>Game Version: </i>A1 <br>
-								<i>Favorite Level: </i>The floaty Mario one</p>
-			<p class="listEntry">Hi :)</p>
-		</div>
+					<p class="listEntry"><b>PatrickJohns1: </b> St Louis (Title Screen, Special World) <a href="https://musescore.com/user/4653431/scores/1739221">musescore.com<span>/user/4653431/scores/1739221</span></a></p>
 
-	</div>
+					<p class="listEntry"><b>A Trumpeter Can Play Sax: </b> Red Sky (Layer 2 Water Level) <a href="https://musescore.com/user/7351001/scores/3995741">musescore.com<span>/user/7351001/scores/3995741</span></a>, Bari 3 (Overworld) <a href="https://musescore.com/user/7351001/scores/2526876">musescore.com<span>/user/7351001/scores/2526876</span></a>, Jiggle (Ladder Level) <a href="https://musescore.com/user/7351001/scores/5388323">musescore.com<span>/user/7351001/scores/5388323</span></a></p>
 
+
+					<p class="subheader">Playtesters</p>
+					<p class="listEntry"><b>Inkydom: </b> A skilled and entertaning streamer who plays Mario and stuff. Watching him play helped me discover a very, very, very large amount of jank that flew under my radar. - <a href="https://www.twitch.tv/inkydom">twitch.tv<span>/inkydom</span></a></p>
+					<p class="listEntry"><b>Yoko: </b> A friend from college who plays many platformers, just not Mario. Watching him play shaped my thoughts on pacing and accessiblity</p>
+
+				</div>
+
+				<div class="section" id="ZoomZone">
+					<p class="header">Zoom Zone</p>
+					<p class="body">
+						Did you beat the game? Did you also beat Special World? That is pretty sweet, you're way better at Mario than I am. And for that, you deserve a spot on this page. Fill out the form below, send the email, and check back later to admire your beautiful space in the zoom zone! The button opens a pre-typed email in your default mail app.
+					</p>
+					<p class="listEntry"><input type="text" id="name" class="longInput" placeholder="- Name -"> <br>
+					<input type="text" id="version" class="longInput" placeholder="- Game Version -"> <br>
+					<input type="text" id="level" class="longInput" placeholder="- Favorite Level -"> <br>
+					<input type="text" id="message" class="longInput" placeholder="- Message -"> <br>
+					<input type="text" id="pword" class="longInput" placeholder="- Password -"> </p>
+					<p class="listEntry"><button onclick="zoomZone()">Generate Email!</button> </p>
+
+					<p class="subheader">Quinn Bear - </p>
+					<p class="listEntry"><i>Game Version: </i>Version A and Version 1 <br>
+										<i>Favorite Level: </i>Layer 2 Water Level</p>
+					<p class="listEntry">This is a preview of what being in the Zoom Zone looks like. I had fun making and playing A1 Mario World, hopefully you enjoy it too. </p>
+
+					<p class="subheader">Da - </p>
+					<p class="listEntry"><i>Game Version: </i>A1 <br>
+										<i>Favorite Level: </i>The floaty Mario one</p>
+					<p class="listEntry">Hi :)</p>
+				</div>
+			</div> <!-- page wrapper close -->
+			</td>
+		</tr>
+	</table>	
 </body>
-
 </html>

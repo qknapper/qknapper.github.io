@@ -26,6 +26,10 @@ body {
 }
 
 div.section { padding-bottom: 20px; }
+div.pagewrapper {
+	overflow-y: auto;
+	overflow-x: hidden;
+}
 
 p { margin-bottom: 0.75em; }
 p.header {
@@ -37,6 +41,10 @@ p.subheader {
 	font-weight: bold;
 }
 p.body { font-size: 14pt; }
+p.listEntry {
+	font-size: 14pt;
+	padding-left: 2ch;		
+}
 
 a { display: inline-block; }
 a:hover { display: inline-block; }
@@ -48,9 +56,16 @@ a:hover span {
 	text-decoration: underline;
 }
 
+.content {
+	border: 3px solid #001149;
+}
 img.sidebarIcon { width: 100%; }
-img.mascot {
+img.inlineImage {
 		height:  1.5em;
+		vertical-align:	middle
+}
+img.bigInlineImage {
+		height:  3em;
 		vertical-align:	middle
 }
 
@@ -61,13 +76,14 @@ input, select, button {
     font-family: inherit;
 	font-size: 1em;
 	border: 1px solid #001149;
+	padding-left: 2ch;
+	padding-right: 2ch;
+	transition-duration: 0.25s;
 }
-input, select { padding-left: 2ch; }
 input:focus, select:focus { outline:  none; }
 button:hover { background-color: #c0cfff; }
 button {
-	text-align: center;
-	transition-duration: 0.25s;
+	
 }
 
 /* Visitor's Log */
@@ -88,4 +104,11 @@ td.visitorInfo {
 }
 img.tableMascot {
 	width:  100%;
+}
+
+/* Swag Meter */
+div.plotlyDiv {
+	min-width: 700px;
+	min-height:  350px;
+	border: 3px solid #001149;
 }

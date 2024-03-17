@@ -4,38 +4,45 @@
 
 <head>
 	<title> qbear.org</title>
-	<link rel="icon" href="Resources/icon.png" />
-	<link rel="stylesheet" type="text/css" href="Resources/main.css">
+	<link rel="icon" href="Resources/icon.png">
+	<link rel="stylesheet" type="text/css" href="Resources/resets.css">
+	<link rel="stylesheet" type="text/css" href="Resources/global.css">
+	<link rel="stylesheet" media="(min-aspect-ratio: 1920/1080)" type="text/css" href="Resources/landscape.css">
+	<link rel="stylesheet" media="(max-aspect-ratio: 1920/1080)" type="text/css" href="Resources/portrait.css">
 	<script src="Resources/script.js"></script>
 </head>
 
-<body style="background-image: url('Resources/background.png')", onload="featuredPage();">	
-	
-	<div class="sidebar">
-		<p><a href="https://qbear.org"><img class="sidebar" src="Resources/home.png"></a></p>
-		<p><a href="Info"><img class="sidebar" src="Resources/info.png"></a></p>
-		<p><a href="What'sNew"><img class="sidebar" src="Resources/new.png"></a></p>
-		<p><a href="WebPageList"><img class="sidebar" src="Resources/list.png"></a></p>
-		<p><a href="Visitor'sLog"><img class="sidebar" src="Resources/visitor.png"></a></p>
-		<p><a onclick="randomPage()" href="javascript:void(0);"><img class="sidebar" src="Resources/random.png"></a></p> <!-- Random (on click) -->
-	</div>
-	<div class="page">
-		<p class="header">Welcome!</p>
-		<div>
-			<p class="body">
-				<a  href="https://qbear.org">qbear.org</a> - Where your journey will be as endless as your enjoyment.
-			</p>
+<body style="background-image: url('Resources/background.png')", onload="featuredPage();">
 
-			<p class="body">
-				While still under construction (I am slowly porting over old favorites), there still should be plenty here for your amusement. First time here? - click the list icon in the sidebar to see all the different pages my website has to offer! Overwhelmend by the options? - you can click the question mark icon for a random page, and there is a hand-picked, featured page just above it! Be sure to check in regularly to see what new tabs and features are coming soon!
-			</p>
+	<table class=pagelayout>
+		<tr>
+			<td class="pagesection sidebar">
+				<p><a href="https://qbear.org"><img class="sidebarIcon" src="Resources/home.png"></a></p>
+				<p><a href="Info"><img class="sidebarIcon" src="Resources/info.png"></a></p>
+				<p><a href="What'sNew"><img class="sidebarIcon" src="Resources/new.png"></a></p>
+				<p><a href="WebPageList"><img class="sidebarIcon" src="Resources/list.png"></a></p>
+				<p><a href="Visitor'sLog"><img class="sidebarIcon" src="Resources/visitor.png"></a></p>
+				<p><a onclick="randomPage()" href="javascript:void(0);"><img class="sidebarIcon" src="Resources/random.png"></a></p> <!-- Random (on click) -->
+			</td>
+			<td class="pagesection page">
+			<div class="pagewrapper">
+				<p class="header">Welcome!</p>
+				<div>
+					<p class="body">
+						<a  href="https://qbear.org">qbear.org</a> - Where your journey will be as endless as your enjoyment.
+					</p>
 
-			<p class="body">
-				- Quinn Bear
-			</p>
-		</div>		
-	</div>
+					<p class="body">
+						While still under construction (I am slowly porting over old favorites), there still should be plenty here for your amusement. First time here? - click the list icon in the sidebar to see all the different pages my website has to offer! Overwhelmend by the options? - you can click the question mark icon for a random page, and there is a hand-picked, featured page just above it! Be sure to check in regularly to see what new tabs and features are coming soon!
+					</p>
 
+					<p class="body">
+						- Quinn Bear
+					</p>
+				</div>
+			</div> <!-- page wrapper close -->
+			</td>
+		</tr>
+	</table>	
 </body>
-
 </html>

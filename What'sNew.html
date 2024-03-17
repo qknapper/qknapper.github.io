@@ -1,146 +1,149 @@
 <!DOCTYPE html>
-
-<html>
-
 <head>
 	<title> qbear.org - What's New</title>
-	<link rel="icon" href="Resources/icon.png" />
-	<link rel="stylesheet" type="text/css" href="Resources/main.css">
+	<link rel="icon" href="Resources/icon.png">
+	<link rel="stylesheet" type="text/css" href="Resources/resets.css">
+	<link rel="stylesheet" type="text/css" href="Resources/global.css">
+	<link rel="stylesheet" media="(min-aspect-ratio: 1920/1080)" type="text/css" href="Resources/landscape.css">
+	<link rel="stylesheet" media="(max-aspect-ratio: 1920/1080)" type="text/css" href="Resources/portrait.css">
 	<script src="Resources/script.js"></script>
 </head>
 
-<body style="background-image: url('Resources/background.png')", onload="featuredPage();">	
-	
-	<div class="sidebar">
-		<p><a href="https://qbear.org"><img class="sidebar" src="Resources/home.png"></a></p>
-		<p><a href="Info"><img class="sidebar" src="Resources/info.png"></a></p>
-		<p><a href="What'sNew"><img class="sidebar" src="Resources/new.png"></a></p>
-		<p><a href="WebPageList"><img class="sidebar" src="Resources/list.png"></a></p>
-		<p><a href="Visitor'sLog"><img class="sidebar" src="Resources/visitor.png"></a></p>
-		<p><a onclick="randomPage()" href="javascript:void(0);"><img class="sidebar" src="Resources/random.png"></a></p> <!-- Random (on click) -->
-	</div>
-	<div class="page">
-		<p class="header">What's New</p>
-		<div class="section">
-			<p class="body">
-				Check in hear to see what's been updated since the last time you were here! Everything to help make sure you didn't miss any of the new additions guaranteed to change your life forever. Sorted newest to oldest, each entry in the "What's New" tab contains it's date and a description. Items tagged [External] contain updates about something not on my website so you can Ctrl+F your way to those. Come back frequently... it's for your own good, I promise
-			</p>
-		</div>
+<body style="background-image: url('Resources/background.png')", onload="featuredPage();">
 
-		<p class="header">Log</p>
+	<table class=pagelayout>
+		<tr>
+			<td class="pagesection sidebar">
+				<p><a href="https://qbear.org"><img class="sidebarIcon" src="Resources/home.png"></a></p>
+				<p><a href="Info"><img class="sidebarIcon" src="Resources/info.png"></a></p>
+				<p><a href="What'sNew"><img class="sidebarIcon" src="Resources/new.png"></a></p>
+				<p><a href="WebPageList"><img class="sidebarIcon" src="Resources/list.png"></a></p>
+				<p><a href="Visitor'sLog"><img class="sidebarIcon" src="Resources/visitor.png"></a></p>
+				<p><a onclick="randomPage()" href="javascript:void(0);"><img class="sidebarIcon" src="Resources/random.png"></a></p> <!-- Random (on click) -->
+			</td>
+			<td class="pagesection page">
+			<div class="pagewrapper">
+				<p class="header">What's New</p>
+				<div class="section">
+					<p class="body">
+						Check in hear to see what's been updated since the last time you were here! Everything to help make sure you didn't miss any of the new additions guaranteed to change your life forever. Sorted newest to oldest, each entry in the "What's New" tab contains it's date and a description. Items tagged [External] contain updates about something not on my website so you can Ctrl+F your way to those. Come back frequently... it's for your own good, I promise
+					</p>
+				</div>
 
-		<div class="section">
-			<p class="subheader">3/13/2024 - Mascots are too awesome to hide</p>
-			<p class="body">
-				Visitor's Log now shows your mascot as it should have from the start. Thanks Wtoshua for the making me realize how stupid I'd been before. Okay cool thanks have a great day.
-			</p>
-		</div>
+				<p class="header">Log</p>
 
-		<div class="section">
-			<p class="subheader">11/11/2023 - Random Alphanumeric Generator</p>
-			<p class="body">
-				Been a while, hasn't it? Anyways, there is now <a href="RandomAlphanumeric">a page to generate an alphanumeric string and automatically copy it to your devices clipboard</a>. It's useless, but I will be using. That's all; that's the update.
-			</p>
-		</div>
+				<div class="section">
+					<p class="subheader">3/17/2024 - Layout Update</p>
+					<p class="body">
+						Updated the backend page structure. Most things look about the same, but everything should be more consistent. This will help me make new things faster because my website source files don't look like an absolute mess as much. Thanks to <a href="https://meyerweb.com/eric/tools/css/reset/">meyer web <span>(css reset)</span></a> for the cool tool resets defaults to help make things consistent.
+					</p>
+					<p class="body">
+						As of now I hate making stuff specific for mobile it is super annoying. Sorry, maybe one day I'll make stuff mobile specific, but I don't really want to. Use a computer
+					</p>
+				</div>
 
-		<div class="section">
-			<p class="subheader">1/19/2023 - A1 Mario World on smwcentral.net</p>
-			<p class="body">
-				A1 Mario World is now on <a href="https://www.smwcentral.net/?p=section&a=details&id=32956">smwcentral.net<span>/?p=section&a=details&id=32956</span></a>! Check it out there or on the <a href="A1MarioWorld">main page here</a>. 
-			</p>
-		</div>
+				<div class="section">
+					<p class="subheader">3/13/2024 - Mascots are too awesome to hide</p>
+					<p class="body">
+						Visitor's Log now shows your mascot as it should have from the start. Thanks Wtoshua for the making me realize how stupid I'd been before. Okay cool thanks have a great day.
+					</p>
+				</div>
 
-		<div class="section">
-			<p class="subheader">12/23/2022 - Merry Chirstmas (from my sister)</p>
-			<p class="body">
-				My sister got me some new playing cards for Christmas. They look cool and are an awesome tool for safety rule education! Head over to the <a href="PlayingCards">Playing Cards</a> page to check out these new cards and the rest of my colection!
-			</p>
-		</div>
+				<div class="section">
+					<p class="subheader">1/19/2023 - A1 Mario World on smwcentral.net</p>
+					<p class="body">
+						A1 Mario World is now on <a href="https://www.smwcentral.net/?p=section&a=details&id=32956">smwcentral.net<span>/?p=section&a=details&id=32956</span></a>! Check it out there or on the <a href="A1MarioWorld">main page here</a>. 
+					</p>
+				</div>
 
-		<div class="section">
-			<p class="subheader">10/31/2022 - My Little Pony Bag Tag League 2: Electric Hoove-aloo</p>
-			<p class="body">
-				My Little Pony Bag Tag League 2: Electric Hoove-aloo is officially underway! check out <a href="MyLittlePonyBagTagLeague2ElectricHoove-aloo">the hub</a> for information, results tracking, and rules!
-			</p>
-		</div>
+				<div class="section">
+					<p class="subheader">12/23/2022 - Merry Chirstmas (from my sister)</p>
+					<p class="body">
+						My sister got me some new playing cards for Christmas. They look cool and are an awesome tool for safety rule education! Head over to the <a href="PlayingCards">Playing Cards</a> page to check out these new cards and the rest of my colection!
+					</p>
+				</div>
 
-		<div class="section">
-			<p class="subheader">9/10/2022 - Visitor's Log Submission Overhaul</p>
-			<p class="body">
-				I overhauled the <a href="Visitor'sLog">Visitor's Log</a> submission form! You can now fill out the form in your browser, no Google Forms required. After you fill out the form, it will open in your device's email client for you to send them my way! ... You've filled out the visitor's log before? Who cares - fill it out again :) . There is a lot of new stuff you can experience on the webpage, share your thoughts in your next Visitor's Log entry.
-			</p>
-		</div>
+				<div class="section">
+					<p class="subheader">10/31/2022 - My Little Pony Bag Tag League 2: Electric Hoove-aloo</p>
+					<p class="body">
+						My Little Pony Bag Tag League 2: Electric Hoove-aloo is officially underway! check out <a href="MyLittlePonyBagTagLeague2ElectricHoove-aloo">the hub</a> for information, results tracking, and rules!
+					</p>
+				</div>
 
-		<div class="section">
-			<p class="subheader">9/9/2022 - A1 Mario World</p>
-			<p class="body">
-				I made a Super Mario World RomHack. You can play it if you want at <a href="A1MarioWorld">A1 Mario World</a>. Versions A and 1 are the same, with minor color swaps. The downloads are patch files, not game files. If you have never played a SMW romhack read <a href="https://www.smwcentral.net/?p=viewthread&t=88029">this thread <span>(smwcentral.net)</span></a>, and send me an email at <a href="mailto: qbear@qbear.org?subject=qbear.org&body=qbear.org is awesome! Anyways, I'm emailing because I want to play A1 Mario World! Help me please! [insert more info please :)]" target="_blank">qbear@qbear.org</a>.
-			</p>
-		</div>	
-		
-		<div class="section">
-			<p class="subheader">4/22/2022 - Linked InGuess Who-ordle!!!</p>
-			<p class="body">
-				[Deprecated - This lasted like 2 days... oof] In this uniquie, daily(ish) challenge, sleuth your way to the solution of the puzzle! Using a LinkedIn post, a set of clues, and your thinking cap - become the best sleuth in your GroupMe!!!
-			</p>
-		</div>		
+				<div class="section">
+					<p class="subheader">9/10/2022 - Visitor's Log Submission Overhaul</p>
+					<p class="body">
+						I overhauled the <a href="Visitor'sLog">Visitor's Log</a> submission form! You can now fill out the form in your browser, no Google Forms required. After you fill out the form, it will open in your device's email client for you to send them my way! ... You've filled out the visitor's log before? Who cares - fill it out again :) . There is a lot of new stuff you can experience on the webpage, share your thoughts in your next Visitor's Log entry.
+					</p>
+				</div>
 
-		<div class="section">
-			<p class="subheader">3/15/2022 - New Playing Cards!!!</p>
-			<p class="body">
-				Three new playing cards for you to look at: A Taylor Swift deck, a deck showcasing Tech Tower, and a blurred out deck that has pictures of my nephew (send me an email if my sister says I can, I'll show you the unblurred deck on a case by case basis).
-			</p>
-		</div>
+				<div class="section">
+					<p class="subheader">9/9/2022 - A1 Mario World</p>
+					<p class="body">
+						I made a Super Mario World RomHack. You can play it if you want at <a href="A1MarioWorld">A1 Mario World</a>. Versions A and 1 are the same, with minor color swaps. The downloads are patch files, not game files. If you have never played a SMW romhack read <a href="https://www.smwcentral.net/?p=viewthread&t=88029">this thread <span>(smwcentral.net)</span></a>, and send me an email at <a href="mailto: qbear@qbear.org?subject=qbear.org&body=qbear.org is awesome! Anyways, I'm emailing because I want to play A1 Mario World! Help me please! [insert more info please :)]" target="_blank">qbear@qbear.org</a>.
+					</p>
+				</div>	
+				
+				<div class="section">
+					<p class="subheader">4/22/2022 - Linked InGuess Who-ordle!!!</p>
+					<p class="body">
+						[Deprecated - This lasted like 2 days... oof] In this uniquie, daily(ish) challenge, sleuth your way to the solution of the puzzle! Using a LinkedIn post, a set of clues, and your thinking cap - become the best sleuth in your GroupMe!!!
+					</p>
+				</div>		
 
-		<div class="section">
-			<p class="subheader">12/13/2021 - WebPage List!!!</p>
-			<p class="body">
-				There is now a list of all the available content on the website! You can find it with the list icon in the sidebar. On that note - the sidebar has been standardized and truncated. It will be this way for a while with the new featured and random page icons! Finally, there is now a showcase video for the "Rockets" deck of playing cards
-			</p>
-		</div>
+				<div class="section">
+					<p class="subheader">3/15/2022 - New Playing Cards!!!</p>
+					<p class="body">
+						Three new playing cards for you to look at: A Taylor Swift deck, a deck showcasing Tech Tower, and a blurred out deck that has pictures of my nephew (send me an email if my sister says I can, I'll show you the unblurred deck on a case by case basis).
+					</p>
+				</div>
 
-		<div class="section">
-			<p class="subheader">12/13/2021 - Swag Meter</p>
-			<p class="body">
-				The new and improved Swag Meter is live!!! Click on the epic sunglasses in the sidebar to generate your personlized Swag Distribution Report. The algorithms are subject to change and will continue to be tweaked, but I have plans to add a hall of fame for it. Until then, feel free to leave your composite swag score in a Visitor's Log entry, save your email report image, and send an email to <a href="mailto: qbear@qbear.org?subject=qbear.org&body=qbear.org is awesome! Anyways, I'm emailing because [insert why you're emailing me]" target="_blank">qbear@qbear.org</a>. Have fun!
-			</p>
-		</div>
+				<div class="section">
+					<p class="subheader">12/13/2021 - WebPage List!!!</p>
+					<p class="body">
+						There is now a list of all the available content on the website! You can find it with the list icon in the sidebar. On that note - the sidebar has been standardized and truncated. It will be this way for a while with the new featured and random page icons! Finally, there is now a showcase video for the "Rockets" deck of playing cards
+					</p>
+				</div>
 
-		<div class="section">
-			<p class="subheader">10/25/2021 - Visitor's Log</p>
-			<p class="body">
-				I have added a visitor's log! Click on the waving hand in the sidebar to leave your mark and say hi to future visitors of the website.
-			</p>
-		</div>
+				<div class="section">
+					<p class="subheader">12/13/2021 - Swag Meter</p>
+					<p class="body">
+						The new and improved Swag Meter is live!!! Click on the epic sunglasses in the sidebar to generate your personlized Swag Distribution Report. The algorithms are subject to change and will continue to be tweaked, but I have plans to add a hall of fame for it. Until then, feel free to leave your composite swag score in a Visitor's Log entry, save your email report image, and send an email to <a href="mailto: qbear@qbear.org?subject=qbear.org&body=qbear.org is awesome! Anyways, I'm emailing because [insert why you're emailing me]" target="_blank">qbear@qbear.org</a>. Have fun!
+					</p>
+				</div>
 
-		<div class="section">
-			<p class="subheader">8/8/2021 - New Apartment [External]</p>
-			<p class="body">
-				I moved. If you're trying to send me some mail or something, you may have the wrong address. Ask me for my new one!
-			</p>
-		</div>
+				<div class="section">
+					<p class="subheader">10/25/2021 - Visitor's Log</p>
+					<p class="body">
+						I have added a visitor's log! Click on the waving hand in the sidebar to leave your mark and say hi to future visitors of the website.
+					</p>
+				</div>
 
-		<div class="section">
-			<p class="subheader">5/28/2021 - New YouTube video [External]</p>
-			<p class="body">
-				I uploaded a new YouTube video - <a href="https://youtu.be/z-Qh5pZ9OAA">youtube.com <span>( "bruh" )</span></a>. It's of me getting the last kill and the dub with my buddy Zoogiraffe. Give it a like if you think it's cool.
-			</p>
+				<div class="section">
+					<p class="subheader">8/8/2021 - New Apartment [External]</p>
+					<p class="body">
+						I moved. If you're trying to send me some mail or something, you may have the wrong address. Ask me for my new one!
+					</p>
+				</div>
 
-			<div class="iframe-container">
-  				<iframe src="https://www.youtube.com/embed/z-Qh5pZ9OAA" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
-		</div>
+				<div class="section">
+					<p class="subheader">5/28/2021 - New YouTube video [External]</p>
+					<p class="body">
+						I uploaded a new YouTube video - <a href="https://youtu.be/z-Qh5pZ9OAA">youtube.com <span>( "bruh" )</span></a>. It's of me getting the last kill and the dub with my buddy Zoogiraffe. Give it a like if you think it's cool.
+					</p>
+				</div>
 
 
-		<div class="section">
-			<p class="subheader">5/28/2021 - "What's New" tab creation</p>
-			<p class="body">
-				I made a tab for updates and stuff. So that is pretty cool if I say so myself. Also leaving here that "Red Standard" and "Zebra King Slayer" are the two decks on the <a href="PlayingCards">Playing Cards</a> tab that have videos so far.
-			</p>
-		</div>
+				<div class="section">
+					<p class="subheader">5/28/2021 - "What's New" tab creation</p>
+					<p class="body">
+						I made a tab for updates and stuff. So that is pretty cool if I say so myself. Also leaving here that "Red Standard" and "Zebra King Slayer" are the two decks on the <a href="PlayingCards">Playing Cards</a> tab that have videos so far.
+					</p>
+				</div>
 
-	</div>
-
+			</div> <!-- page wrapper close -->
+			</td>
+		</tr>
+	</table>	
 </body>
-
 </html>

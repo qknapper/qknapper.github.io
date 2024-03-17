@@ -4,47 +4,51 @@
 
 <head>
 	<title> qbear.org - WebPage List</title>
-	<link rel="icon" href="Resources/icon.png" />
-	<link rel="stylesheet" type="text/css" href="Resources/main.css">
+	<link rel="icon" href="Resources/icon.png">
+	<link rel="stylesheet" type="text/css" href="Resources/resets.css">
+	<link rel="stylesheet" type="text/css" href="Resources/global.css">
+	<link rel="stylesheet" media="(min-aspect-ratio: 1920/1080)" type="text/css" href="Resources/landscape.css">
+	<link rel="stylesheet" media="(max-aspect-ratio: 1920/1080)" type="text/css" href="Resources/portrait.css">
 	<script src="Resources/script.js"></script>
 </head>
 
-<body style="background-image: url('Resources/background.png')", onload="featuredPage();">	
-	
-	<div class="sidebar">
-		<p><a href="https://qbear.org"><img class="sidebar" src="Resources/home.png"></a></p>
-		<p><a href="Info"><img class="sidebar" src="Resources/info.png"></a></p>
-		<p><a href="What'sNew"><img class="sidebar" src="Resources/new.png"></a></p>
-		<p><a href="WebPageList"><img class="sidebar" src="Resources/list.png"></a></p>
-		<p><a href="Visitor'sLog"><img class="sidebar" src="Resources/visitor.png"></a></p>
-		<p><a onclick="randomPage()" href="javascript:void(0);"><img class="sidebar" src="Resources/random.png"></a></p> <!-- Random (on click) -->
-	</div>
-	</div>
-	<div class="page">
-		<p class="header">WebPage List</p>
-		<div>
-			<p class="body">
-				What would you like to do today? Only you can answer that question, by selecting one of the webpages at <a  href="https://qbear.org">qbear.org</a> below! Have fun exploring :)
-			</p>
+<body style="background-image: url('Resources/background.png')", onload="featuredPage();">
 
-			<p class="body">
-				<p class="body"><a href="https://qbear.org"><img class="weblistImage" src="Resources/home.png"></a> - <b><a  href="https://qbear.org">qbear.org</a>:</b> the home screen</p>
-				<p class="body"><a href="Info"><img class="weblistImage" src="Resources/info.png"></a> - <b>Info:</b> Learn more about me and my website</p>
-				<p class="body"><a href="What'sNew"><img class="weblistImage" src="Resources/new.png"></a> - <b>What's New:</b> Check out a list of the updates you missed here</p>
-				<p class="body"><a href="PlayingCards"><img class="weblistImage" src="Resources/cards.png"></a> - <b>Playing Cards:</b> Browse my collection of playing cards</p>
-				<p class="body"><a href="Visitor'sLog"><img class="weblistImage" src="Resources/visitor.png"></a> - <b>Visitor's Log:</b> Say hi and leave your mark on <a  href="https://qbear.org">qbear.org</a></p>
-				<p class="body"><a href="SwagMeter"><img class="weblistImage" src="Resources/swag.png"></a> - <b>Swag Meter:</b> Generate a comprehensive report detailing your swag levels</p>
-				<p class="body"><a href="A1MarioWorld"><img class="weblistImage" src="Resources/a1.png"></a> - <b>A1 Mario World:</b> Play a fun remix of the classic Super Mario World</p>
-				<p class="body"><a href="RandomAlphanumeric"><img class="weblistImage" src="Resources/random.png"></a> - <b>Random Alphanumeric Generator:</b> Generate and copy a random alphanumeric string to your clipboard</p>
-			</p>
-			<p class="body">
-				<p>-</p>
-				<p class="body">The stuff below is really old. Or something that used to be dynamic, but is no longer updated. You should still lbe able to at least expirience it a little bit. If you would like to see anything here revitalized send me an email at <a href="mailto: qbear@qbear.org?subject=qbear.org&body=qbear.org is awesome! Anyways, I'm emailing because I want one of the old pages brought back to life! [insert more info please :)]" target="_blank">qbear@qbear.org</a> </p>
-				<p class="body"><a href="LinkedInGuessWho-ordle"><img class="weblistImage" src="Resources/linkedin.png"></a> - <b>[Deprecated] LinkedIn Guess Who-ordle:</b> Sleuth your way to the solution of a daily(ish) puzzle!</p>
-			</p>
-		</div>		
-	</div>
+	<table class=pagelayout>
+		<tr>
+			<td class="pagesection sidebar">
+				<p><a href="https://qbear.org"><img class="sidebarIcon" src="Resources/home.png"></a></p>
+				<p><a href="Info"><img class="sidebarIcon" src="Resources/info.png"></a></p>
+				<p><a href="What'sNew"><img class="sidebarIcon" src="Resources/new.png"></a></p>
+				<p><a href="WebPageList"><img class="sidebarIcon" src="Resources/list.png"></a></p>
+				<p><a href="Visitor'sLog"><img class="sidebarIcon" src="Resources/visitor.png"></a></p>
+				<p><a onclick="randomPage()" href="javascript:void(0);"><img class="sidebarIcon" src="Resources/random.png"></a></p> <!-- Random (on click) -->
+			</td>
+			<td class="pagesection page">
+			<div class="pagewrapper">
+				<p class="header">WebPage List</p>
+				<div>
+					<p class="body">
+						What would you like to do today? Only you can answer that question, by selecting one of the webpages at <a  href="https://qbear.org">qbear.org</a> below! Have fun exploring :)
+					</p>
 
+					<p class="body">
+						<p class="body"><a href="https://qbear.org"><img class="bigInlineImage" src="Resources/home.png"></a> - <b><a  href="https://qbear.org">qbear.org</a>:</b> the home screen</p>
+						<p class="body"><a href="Info"><img class="bigInlineImage" src="Resources/info.png"></a> - <b>Info:</b> Learn more about me and my website</p>
+						<p class="body"><a href="What'sNew"><img class="bigInlineImage" src="Resources/new.png"></a> - <b>What's New:</b> Check out a list of the updates you missed here</p>
+						<p class="body"><a href="PlayingCards"><img class="bigInlineImage" src="Resources/cards.png"></a> - <b>Playing Cards:</b> Browse my collection of playing cards</p>
+						<p class="body"><a href="Visitor'sLog"><img class="bigInlineImage" src="Resources/visitor.png"></a> - <b>Visitor's Log:</b> Say hi and leave your mark on <a  href="https://qbear.org">qbear.org</a></p>
+						<p class="body"><a href="SwagMeter"><img class="bigInlineImage" src="Resources/swag.png"></a> - <b>Swag Meter:</b> Generate a comprehensive report detailing your swag levels</p>
+						<p class="body"><a href="A1MarioWorld"><img class="bigInlineImage" src="Resources/a1.png"></a> - <b>A1 Mario World:</b> Play a fun remix of the classic Super Mario World</p>
+					</p>
+					<p class="body">
+						<p>-</p>
+						<p class="body">The stuff below doesn't get updated. You should still be able to at least expirience it a little bit. If you would like to see anything here revitalized send me an email at <a href="mailto: qbear@qbear.org?subject=qbear.org&body=qbear.org is awesome! Anyways, I'm emailing because I want one of the old pages brought back to life! [insert more info please :)]" target="_blank">qbear@qbear.org</a> </p>
+						<p class="body"><a href="Deprecated/LinkedInGuessWho-ordle"><img class="bigInlineImage" src="Resources/linkedin.png"></a> - <b>[Deprecated] LinkedIn Guess Who-ordle:</b> Sleuth your way to the solution of a daily(ish) puzzle!</p>
+					</p>
+			</div> <!-- page wrapper close -->
+			</td>
+		</tr>
+	</table>	
 </body>
-
 </html>
